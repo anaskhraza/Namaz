@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6B75B925AD906B00BD45B9 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */; };
 		D804F47125AC2F760030C60B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804F47025AC2F760030C60B /* WidgetKit.framework */; };
 		D804F47325AC2F760030C60B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804F47225AC2F760030C60B /* SwiftUI.framework */; };
 		D804F47625AC2F760030C60B /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804F47525AC2F760030C60B /* WidgetExtension.swift */; };
@@ -90,6 +91,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		D804F46E25AC2F760030C60B /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D804F47025AC2F760030C60B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D804F47225AC2F760030C60B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -248,6 +250,7 @@
 				D8EDA35925061DEB0045C7AE /* Assets.xcassets */,
 				D8EDA35B25061DEB0045C7AE /* LaunchScreen.storyboard */,
 				D8EDA35E25061DEB0045C7AE /* Info.plist */,
+				CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */,
 			);
 			path = "Quran and Namaz";
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				D872EC1225A21E2C0090D946 /* CustomPickerView.swift in Sources */,
 				D831DB162510AEDF0026AF1A /* Adhan.swift in Sources */,
 				D831DAFB2510A6990026AF1A /* SolarCoordinates.swift in Sources */,
+				CE6B75B925AD906B00BD45B9 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

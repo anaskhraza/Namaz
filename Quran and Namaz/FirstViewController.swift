@@ -9,25 +9,30 @@
 import UIKit
 import MapKit
 
-class FirstViewController: UIViewController  {
+class FirstViewController: UIViewController {
     
+    let myTabController = MyTabBarController()
     let locationManager = LocationManager()
+    var coordinates: Coordinates!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let authStatus = locationManager.getAuthorizationStatus()
         
         
-       
+        
         if authStatus == PermissionStatus.NA {
             locationManager.getLocationPopup()
         }
         
         if authStatus == PermissionStatus.Denied {
-           
-
+            coordinates = Coordinates(latitude: 21.4225, longitude: 39.8262)
         }
-        //        locationManager.getCoordinates()
-        
+        if(authStatus == PermissionStatus.Authorized) {
+            locationManager.getCoordinates()
+        }
+                
         let cal = Calendar(identifier: Calendar.Identifier.gregorian)
         let formatter = DateFormatter()
         let date = cal.dateComponents([.year, .month, .day], from: Date())
@@ -82,11 +87,6 @@ class FirstViewController: UIViewController  {
         })
     }
     
-    
-    
-    
-    
-    
-    
 }
+
 

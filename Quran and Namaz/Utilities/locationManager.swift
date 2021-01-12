@@ -37,6 +37,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         latitude =  locValue.latitude
