@@ -95,6 +95,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         shouldShowSearchResults = true
         self.tblSearchResults.reloadData()
     }
+
     
     func didTapOnSearchButton() {
         if !shouldShowSearchResults {
@@ -125,6 +126,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         shouldShowSearchResults = true
         self.tblSearchResults.reloadData()
     }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchController.searchBar.resignFirstResponder()
+    }
 
     
     
@@ -146,6 +151,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func configureSearchController() {
         // Initialize and perform a minimum configuration to the search controller.
         searchController = UISearchController(searchResultsController: nil)
+        searchController.obscuresBackgroundDuringPresentation = false
+        definesPresentationContext = true
         searchController.searchResultsUpdater = self
         searchController.searchBar.placeholder = "Search here..."
         searchController.searchBar.delegate = self
@@ -175,7 +182,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         do {
             let jsonData = try Data(contentsOf: url)
             let json = try JSONSerialization.jsonObject(with: jsonData) as! [String:Any]
-//            print(json)
 
             let currencies = json[self.countryCode] as! NSArray
             
@@ -186,10 +192,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 if (name != nil) {
                     citiesArray.append(name!)
                 }
-                
-                
-                
             }
+            
             dataArray = citiesArray
             tblSearchResults.reloadData()
 

@@ -21,6 +21,11 @@ class FirstViewController: UIViewController  {
         if authStatus == PermissionStatus.NA {
             locationManager.getLocationPopup()
         }
+        
+        if authStatus == PermissionStatus.Denied {
+           
+
+        }
         //        locationManager.getCoordinates()
         
         let cal = Calendar(identifier: Calendar.Identifier.gregorian)

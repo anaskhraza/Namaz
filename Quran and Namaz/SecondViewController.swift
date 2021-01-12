@@ -20,6 +20,7 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     
+    @IBOutlet var autoLocationSwitch: UISwitch!
     
     
     @IBAction func pushForSearchCity(_ sender: Any) {
@@ -31,6 +32,10 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        autoLocationSwitch.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
+        
+        autoLocationSwitch.isOn = false
         
         var myEnglishArray: [NSDictionary] = []
         if let URL = Bundle.main.url(forResource: "CountriesDictionary", withExtension: "plist") {
@@ -68,6 +73,12 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
         if((textField1.text) != nil) {
             textField2.isUserInteractionEnabled = true
         }
+    }
+    
+    @objc func switchChanged(mySwitch: UISwitch) {
+        let value = mySwitch.isOn
+        let _ = value
+        // Do something
     }
     
     
