@@ -7,6 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D804F47125AC2F760030C60B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804F47025AC2F760030C60B /* WidgetKit.framework */; };
+		D804F47325AC2F760030C60B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804F47225AC2F760030C60B /* SwiftUI.framework */; };
+		D804F47625AC2F760030C60B /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804F47525AC2F760030C60B /* WidgetExtension.swift */; };
+		D804F47925AC2F770030C60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D804F47825AC2F770030C60B /* Assets.xcassets */; };
+		D804F47B25AC2F770030C60B /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D804F47725AC2F760030C60B /* WidgetExtension.intentdefinition */; };
+		D804F47C25AC2F770030C60B /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D804F47725AC2F760030C60B /* WidgetExtension.intentdefinition */; };
+		D804F47F25AC2F770030C60B /* WidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D804F46E25AC2F760030C60B /* WidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D80FCB8525A4DDDB00512A84 /* ToolbarControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FCB8425A4DDDB00512A84 /* ToolbarControl.swift */; };
+		D80FCB8F25A60F9200512A84 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FCB8E25A60F9200512A84 /* SearchViewController.swift */; };
+		D80FCB9725A65BA800512A84 /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FCB9625A65BA800512A84 /* CustomSearchController.swift */; };
+		D80FCBA725A65BF100512A84 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FCBA625A65BF100512A84 /* CustomSearchBar.swift */; };
+		D80FCBAF25A6FB0900512A84 /* citiesMap.json in Resources */ = {isa = PBXBuildFile; fileRef = D80FCBAE25A6FB0900512A84 /* citiesMap.json */; };
+		D831DAF72510A6590026AF1A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DAF62510A6590026AF1A /* LocationManager.swift */; };
+		D831DAF92510A6830026AF1A /* Astronomical.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DAF82510A6830026AF1A /* Astronomical.swift */; };
+		D831DAFB2510A6990026AF1A /* SolarCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DAFA2510A6990026AF1A /* SolarCoordinates.swift */; };
+		D831DAFD2510A6AE0026AF1A /* SolarTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DAFC2510A6AE0026AF1A /* SolarTime.swift */; };
+		D831DAFF2510A76D0026AF1A /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DAFE2510A76D0026AF1A /* DateUtilities.swift */; };
+		D831DB012510A77D0026AF1A /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB002510A77D0026AF1A /* MathUtilities.swift */; };
+		D831DB032510A8420026AF1A /* CalculationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB022510A8420026AF1A /* CalculationMethod.swift */; };
+		D831DB052510A85B0026AF1A /* CalculationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB042510A85B0026AF1A /* CalculationParameters.swift */; };
+		D831DB072510A8680026AF1A /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB062510A8680026AF1A /* Coordinates.swift */; };
+		D831DB092510A87C0026AF1A /* HighAltitudeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB082510A87C0026AF1A /* HighAltitudeRule.swift */; };
+		D831DB0B2510A88A0026AF1A /* Madhab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB0A2510A88A0026AF1A /* Madhab.swift */; };
+		D831DB0D2510A8940026AF1A /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB0C2510A8940026AF1A /* Prayer.swift */; };
+		D831DB0F2510A8AD0026AF1A /* PrayerAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB0E2510A8AD0026AF1A /* PrayerAdjustment.swift */; };
+		D831DB112510A8C00026AF1A /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB102510A8C00026AF1A /* Angle.swift */; };
+		D831DB132510A8CD0026AF1A /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB122510A8CD0026AF1A /* Minute.swift */; };
+		D831DB162510AEDF0026AF1A /* Adhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB152510AEDF0026AF1A /* Adhan.swift */; };
+		D831DB182510AF0A0026AF1A /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB172510AF0A0026AF1A /* PrayerTimes.swift */; };
+		D831DB1A2510AF340026AF1A /* Qibla.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB192510AF340026AF1A /* Qibla.swift */; };
+		D831DB1C2510AF500026AF1A /* Sunnah.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB1B2510AF500026AF1A /* Sunnah.swift */; };
+		D831DB1E251148C60026AF1A /* CountriesDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = D831DB1D251148C60026AF1A /* CountriesDictionary.plist */; };
+		D872EC1225A21E2C0090D946 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872EC1125A21E2C0090D946 /* CustomPickerView.swift */; };
 		D8EDA34F25061DE80045C7AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA34E25061DE80045C7AE /* AppDelegate.swift */; };
 		D8EDA35125061DE80045C7AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA35025061DE80045C7AE /* SceneDelegate.swift */; };
 		D8EDA35325061DE80045C7AE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA35225061DE80045C7AE /* FirstViewController.swift */; };
@@ -19,6 +52,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D804F47D25AC2F770030C60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8EDA34325061DE80045C7AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D804F46D25AC2F760030C60B;
+			remoteInfo = WidgetExtensionExtension;
+		};
 		D8EDA36425061DEB0045C7AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8EDA34325061DE80045C7AE /* Project object */;
@@ -35,7 +75,54 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D804F48025AC2F770030C60B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D804F47F25AC2F770030C60B /* WidgetExtensionExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D804F46E25AC2F760030C60B /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D804F47025AC2F760030C60B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D804F47225AC2F760030C60B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D804F47525AC2F760030C60B /* WidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtension.swift; sourceTree = "<group>"; };
+		D804F47725AC2F760030C60B /* WidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetExtension.intentdefinition; sourceTree = "<group>"; };
+		D804F47825AC2F770030C60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D804F47A25AC2F770030C60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80FCB8425A4DDDB00512A84 /* ToolbarControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarControl.swift; sourceTree = "<group>"; };
+		D80FCB8E25A60F9200512A84 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D80FCB9625A65BA800512A84 /* CustomSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
+		D80FCBA625A65BF100512A84 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		D80FCBAE25A6FB0900512A84 /* citiesMap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = citiesMap.json; sourceTree = "<group>"; };
+		D831DAF62510A6590026AF1A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D831DAF82510A6830026AF1A /* Astronomical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronomical.swift; sourceTree = "<group>"; };
+		D831DAFA2510A6990026AF1A /* SolarCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCoordinates.swift; sourceTree = "<group>"; };
+		D831DAFC2510A6AE0026AF1A /* SolarTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTime.swift; sourceTree = "<group>"; };
+		D831DAFE2510A76D0026AF1A /* DateUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
+		D831DB002510A77D0026AF1A /* MathUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtilities.swift; sourceTree = "<group>"; };
+		D831DB022510A8420026AF1A /* CalculationMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationMethod.swift; sourceTree = "<group>"; };
+		D831DB042510A85B0026AF1A /* CalculationParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationParameters.swift; sourceTree = "<group>"; };
+		D831DB062510A8680026AF1A /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		D831DB082510A87C0026AF1A /* HighAltitudeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighAltitudeRule.swift; sourceTree = "<group>"; };
+		D831DB0A2510A88A0026AF1A /* Madhab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Madhab.swift; sourceTree = "<group>"; };
+		D831DB0C2510A8940026AF1A /* Prayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
+		D831DB0E2510A8AD0026AF1A /* PrayerAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerAdjustment.swift; sourceTree = "<group>"; };
+		D831DB102510A8C00026AF1A /* Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		D831DB122510A8CD0026AF1A /* Minute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
+		D831DB152510AEDF0026AF1A /* Adhan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adhan.swift; sourceTree = "<group>"; };
+		D831DB172510AF0A0026AF1A /* PrayerTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
+		D831DB192510AF340026AF1A /* Qibla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qibla.swift; sourceTree = "<group>"; };
+		D831DB1B2510AF500026AF1A /* Sunnah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sunnah.swift; sourceTree = "<group>"; };
+		D831DB1D251148C60026AF1A /* CountriesDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountriesDictionary.plist; sourceTree = "<group>"; };
+		D872EC1125A21E2C0090D946 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
 		D8EDA34B25061DE80045C7AE /* Quran and Namaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quran and Namaz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EDA34E25061DE80045C7AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8EDA35025061DE80045C7AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +141,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D804F46B25AC2F760030C60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804F47325AC2F760030C60B /* SwiftUI.framework in Frameworks */,
+				D804F47125AC2F760030C60B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8EDA34825061DE80045C7AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +174,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D804F46F25AC2F760030C60B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D804F47025AC2F760030C60B /* WidgetKit.framework */,
+				D804F47225AC2F760030C60B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D804F47425AC2F760030C60B /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D804F47525AC2F760030C60B /* WidgetExtension.swift */,
+				D804F47725AC2F760030C60B /* WidgetExtension.intentdefinition */,
+				D804F47825AC2F770030C60B /* Assets.xcassets */,
+				D804F47A25AC2F770030C60B /* Info.plist */,
+			);
+			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
+		D831DB142510AEB20026AF1A /* Prayer */ = {
+			isa = PBXGroup;
+			children = (
+				D831DB152510AEDF0026AF1A /* Adhan.swift */,
+				D831DB172510AF0A0026AF1A /* PrayerTimes.swift */,
+				D831DB192510AF340026AF1A /* Qibla.swift */,
+				D831DB1B2510AF500026AF1A /* Sunnah.swift */,
+			);
+			path = Prayer;
+			sourceTree = "<group>";
+		};
 		D8EDA34225061DE80045C7AE = {
 			isa = PBXGroup;
 			children = (
 				D8EDA34D25061DE80045C7AE /* Quran and Namaz */,
 				D8EDA36625061DEB0045C7AE /* Quran and NamazTests */,
 				D8EDA37125061DEB0045C7AE /* Quran and NamazUITests */,
+				D804F47425AC2F760030C60B /* WidgetExtension */,
+				D804F46F25AC2F760030C60B /* Frameworks */,
 				D8EDA34C25061DE80045C7AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +223,7 @@
 				D8EDA34B25061DE80045C7AE /* Quran and Namaz.app */,
 				D8EDA36325061DEB0045C7AE /* Quran and NamazTests.xctest */,
 				D8EDA36E25061DEB0045C7AE /* Quran and NamazUITests.xctest */,
+				D804F46E25AC2F760030C60B /* WidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,10 +231,19 @@
 		D8EDA34D25061DE80045C7AE /* Quran and Namaz */ = {
 			isa = PBXGroup;
 			children = (
+				D80FCBAE25A6FB0900512A84 /* citiesMap.json */,
+				D831DB1D251148C60026AF1A /* CountriesDictionary.plist */,
+				D831DB142510AEB20026AF1A /* Prayer */,
+				D8FBD2A2250F8507002AA2E6 /* Utilities */,
 				D8EDA34E25061DE80045C7AE /* AppDelegate.swift */,
+				D872EC1125A21E2C0090D946 /* CustomPickerView.swift */,
 				D8EDA35025061DE80045C7AE /* SceneDelegate.swift */,
 				D8EDA35225061DE80045C7AE /* FirstViewController.swift */,
 				D8EDA35425061DE80045C7AE /* SecondViewController.swift */,
+				D80FCB8E25A60F9200512A84 /* SearchViewController.swift */,
+				D80FCB8425A4DDDB00512A84 /* ToolbarControl.swift */,
+				D80FCBA625A65BF100512A84 /* CustomSearchBar.swift */,
+				D80FCB9625A65BA800512A84 /* CustomSearchController.swift */,
 				D8EDA35625061DE80045C7AE /* Main.storyboard */,
 				D8EDA35925061DEB0045C7AE /* Assets.xcassets */,
 				D8EDA35B25061DEB0045C7AE /* LaunchScreen.storyboard */,
@@ -131,9 +270,48 @@
 			path = "Quran and NamazUITests";
 			sourceTree = "<group>";
 		};
+		D8FBD2A2250F8507002AA2E6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D831DAF62510A6590026AF1A /* LocationManager.swift */,
+				D831DAF82510A6830026AF1A /* Astronomical.swift */,
+				D831DAFA2510A6990026AF1A /* SolarCoordinates.swift */,
+				D831DAFC2510A6AE0026AF1A /* SolarTime.swift */,
+				D831DAFE2510A76D0026AF1A /* DateUtilities.swift */,
+				D831DB002510A77D0026AF1A /* MathUtilities.swift */,
+				D831DB022510A8420026AF1A /* CalculationMethod.swift */,
+				D831DB042510A85B0026AF1A /* CalculationParameters.swift */,
+				D831DB062510A8680026AF1A /* Coordinates.swift */,
+				D831DB082510A87C0026AF1A /* HighAltitudeRule.swift */,
+				D831DB0A2510A88A0026AF1A /* Madhab.swift */,
+				D831DB0C2510A8940026AF1A /* Prayer.swift */,
+				D831DB0E2510A8AD0026AF1A /* PrayerAdjustment.swift */,
+				D831DB102510A8C00026AF1A /* Angle.swift */,
+				D831DB122510A8CD0026AF1A /* Minute.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D804F46D25AC2F760030C60B /* WidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D804F48325AC2F770030C60B /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */;
+			buildPhases = (
+				D804F46A25AC2F760030C60B /* Sources */,
+				D804F46B25AC2F760030C60B /* Frameworks */,
+				D804F46C25AC2F760030C60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtensionExtension;
+			productName = WidgetExtensionExtension;
+			productReference = D804F46E25AC2F760030C60B /* WidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D8EDA34A25061DE80045C7AE /* Quran and Namaz */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8EDA37725061DEB0045C7AE /* Build configuration list for PBXNativeTarget "Quran and Namaz" */;
@@ -141,10 +319,12 @@
 				D8EDA34725061DE80045C7AE /* Sources */,
 				D8EDA34825061DE80045C7AE /* Frameworks */,
 				D8EDA34925061DE80045C7AE /* Resources */,
+				D804F48025AC2F770030C60B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D804F47E25AC2F770030C60B /* PBXTargetDependency */,
 			);
 			name = "Quran and Namaz";
 			productName = "Quran and Namaz";
@@ -193,10 +373,13 @@
 		D8EDA34325061DE80045C7AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Anas khurshid";
 				TargetAttributes = {
+					D804F46D25AC2F760030C60B = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					D8EDA34A25061DE80045C7AE = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -226,17 +409,28 @@
 				D8EDA34A25061DE80045C7AE /* Quran and Namaz */,
 				D8EDA36225061DEB0045C7AE /* Quran and NamazTests */,
 				D8EDA36D25061DEB0045C7AE /* Quran and NamazUITests */,
+				D804F46D25AC2F760030C60B /* WidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D804F46C25AC2F760030C60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804F47925AC2F770030C60B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8EDA34925061DE80045C7AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D8EDA35D25061DEB0045C7AE /* LaunchScreen.storyboard in Resources */,
+				D831DB1E251148C60026AF1A /* CountriesDictionary.plist in Resources */,
 				D8EDA35A25061DEB0045C7AE /* Assets.xcassets in Resources */,
+				D80FCBAF25A6FB0900512A84 /* citiesMap.json in Resources */,
 				D8EDA35825061DE80045C7AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,14 +452,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D804F46A25AC2F760030C60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804F47B25AC2F770030C60B /* WidgetExtension.intentdefinition in Sources */,
+				D804F47625AC2F760030C60B /* WidgetExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8EDA34725061DE80045C7AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D831DB0B2510A88A0026AF1A /* Madhab.swift in Sources */,
 				D8EDA35525061DE80045C7AE /* SecondViewController.swift in Sources */,
+				D831DB052510A85B0026AF1A /* CalculationParameters.swift in Sources */,
+				D80FCB8525A4DDDB00512A84 /* ToolbarControl.swift in Sources */,
 				D8EDA35325061DE80045C7AE /* FirstViewController.swift in Sources */,
+				D831DB092510A87C0026AF1A /* HighAltitudeRule.swift in Sources */,
+				D831DAFD2510A6AE0026AF1A /* SolarTime.swift in Sources */,
+				D831DAF72510A6590026AF1A /* LocationManager.swift in Sources */,
+				D80FCB8F25A60F9200512A84 /* SearchViewController.swift in Sources */,
+				D804F47C25AC2F770030C60B /* WidgetExtension.intentdefinition in Sources */,
+				D831DB1C2510AF500026AF1A /* Sunnah.swift in Sources */,
+				D831DB012510A77D0026AF1A /* MathUtilities.swift in Sources */,
+				D831DB132510A8CD0026AF1A /* Minute.swift in Sources */,
+				D831DB0F2510A8AD0026AF1A /* PrayerAdjustment.swift in Sources */,
+				D831DAF92510A6830026AF1A /* Astronomical.swift in Sources */,
+				D80FCBA725A65BF100512A84 /* CustomSearchBar.swift in Sources */,
+				D831DB032510A8420026AF1A /* CalculationMethod.swift in Sources */,
+				D80FCB9725A65BA800512A84 /* CustomSearchController.swift in Sources */,
+				D831DB0D2510A8940026AF1A /* Prayer.swift in Sources */,
+				D831DB182510AF0A0026AF1A /* PrayerTimes.swift in Sources */,
 				D8EDA34F25061DE80045C7AE /* AppDelegate.swift in Sources */,
+				D831DB1A2510AF340026AF1A /* Qibla.swift in Sources */,
+				D831DB112510A8C00026AF1A /* Angle.swift in Sources */,
+				D831DB072510A8680026AF1A /* Coordinates.swift in Sources */,
+				D831DAFF2510A76D0026AF1A /* DateUtilities.swift in Sources */,
 				D8EDA35125061DE80045C7AE /* SceneDelegate.swift in Sources */,
+				D872EC1225A21E2C0090D946 /* CustomPickerView.swift in Sources */,
+				D831DB162510AEDF0026AF1A /* Adhan.swift in Sources */,
+				D831DAFB2510A6990026AF1A /* SolarCoordinates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +516,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D804F47E25AC2F770030C60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D804F46D25AC2F760030C60B /* WidgetExtensionExtension */;
+			targetProxy = D804F47D25AC2F770030C60B /* PBXContainerItemProxy */;
+		};
 		D8EDA36525061DEB0045C7AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D8EDA34A25061DE80045C7AE /* Quran and Namaz */;
@@ -320,6 +553,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D804F48125AC2F770030C60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S62GQETD5W;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anaskhurshid..Quran-and-Namaz.WidgetExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D804F48225AC2F770030C60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S62GQETD5W;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anaskhurshid..Quran-and-Namaz.WidgetExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D8EDA37525061DEB0045C7AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -437,6 +716,7 @@
 		D8EDA37825061DEB0045C7AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S62GQETD5W;
@@ -455,6 +735,7 @@
 		D8EDA37925061DEB0045C7AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S62GQETD5W;
@@ -557,6 +838,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D804F48325AC2F770030C60B /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D804F48125AC2F770030C60B /* Debug */,
+				D804F48225AC2F770030C60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D8EDA34625061DE80045C7AE /* Build configuration list for PBXProject "Quran and Namaz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
