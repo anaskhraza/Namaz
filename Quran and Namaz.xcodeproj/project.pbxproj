@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE52558625AEBE3F004D737B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE52558525AEBE3F004D737B /* MapKit.framework */; };
 		CE6B75B925AD906B00BD45B9 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */; };
 		D804F47125AC2F760030C60B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804F47025AC2F760030C60B /* WidgetKit.framework */; };
 		D804F47325AC2F760030C60B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804F47225AC2F760030C60B /* SwiftUI.framework */; };
@@ -91,6 +92,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE52558525AEBE3F004D737B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE52558725AEBE4D004D737B /* Quran and Namaz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Quran and Namaz.entitlements"; sourceTree = "<group>"; };
 		CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		D804F46E25AC2F760030C60B /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D804F47025AC2F760030C60B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -156,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE52558625AEBE3F004D737B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +183,7 @@
 		D804F46F25AC2F760030C60B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE52558525AEBE3F004D737B /* MapKit.framework */,
 				D804F47025AC2F760030C60B /* WidgetKit.framework */,
 				D804F47225AC2F760030C60B /* SwiftUI.framework */,
 			);
@@ -233,6 +238,7 @@
 		D8EDA34D25061DE80045C7AE /* Quran and Namaz */ = {
 			isa = PBXGroup;
 			children = (
+				CE52558725AEBE4D004D737B /* Quran and Namaz.entitlements */,
 				D80FCBAE25A6FB0900512A84 /* citiesMap.json */,
 				D831DB1D251148C60026AF1A /* CountriesDictionary.plist */,
 				D831DB142510AEB20026AF1A /* Prayer */,
@@ -722,6 +728,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Quran and Namaz/Quran and Namaz.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S62GQETD5W;
 				INFOPLIST_FILE = "Quran and Namaz/Info.plist";
@@ -741,6 +748,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Quran and Namaz/Quran and Namaz.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S62GQETD5W;
 				INFOPLIST_FILE = "Quran and Namaz/Info.plist";

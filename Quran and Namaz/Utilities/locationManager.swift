@@ -15,6 +15,8 @@ enum PermissionStatus {
     static let NA = "NA"
 }
 
+
+
 class LocationManager: NSObject, CLLocationManagerDelegate {
     
     var locManager: CLLocationManager!
@@ -23,6 +25,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     override init() {
         super.init()
         locManager = CLLocationManager()
+        locManager.delegate = self
     }
     
     func getLocationPopup() {
@@ -31,12 +34,24 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     
     func getCoordinates () {
         if CLLocationManager.locationServicesEnabled() {
-            locManager.delegate = self
             locManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locManager.startUpdatingLocation()
         }
     }
     
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        
+        if (status == CLAuthorizationStatus.denied) {
+            print("Denied")
+                // The user denied authorization
+        } else if (status == CLAuthorizationStatus.authorizedAlways) {
+            self.getCoordinates()
+                // The user accepted authorization
+        } else if (status == CLAuthorizationStatus.authorizedWhenInUse) {
+            self.getCoordinates()
+            // The user accepted authorization
+        }
+    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
