@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE52558625AEBE3F004D737B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE52558525AEBE3F004D737B /* MapKit.framework */; };
 		CE6B75B925AD906B00BD45B9 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */; };
+		CE7AAD5125B03C0600EC8036 /* CalculationCountryMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AAD5025B03C0600EC8036 /* CalculationCountryMap.swift */; };
 		D804F47125AC2F760030C60B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804F47025AC2F760030C60B /* WidgetKit.framework */; };
 		D804F47325AC2F760030C60B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D804F47225AC2F760030C60B /* SwiftUI.framework */; };
 		D804F47625AC2F760030C60B /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804F47525AC2F760030C60B /* WidgetExtension.swift */; };
@@ -95,6 +96,7 @@
 		CE52558525AEBE3F004D737B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE52558725AEBE4D004D737B /* Quran and Namaz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Quran and Namaz.entitlements"; sourceTree = "<group>"; };
 		CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		CE7AAD5025B03C0600EC8036 /* CalculationCountryMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationCountryMap.swift; sourceTree = "<group>"; };
 		D804F46E25AC2F760030C60B /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D804F47025AC2F760030C60B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D804F47225AC2F760030C60B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -297,6 +299,7 @@
 				D831DB0E2510A8AD0026AF1A /* PrayerAdjustment.swift */,
 				D831DB102510A8C00026AF1A /* Angle.swift */,
 				D831DB122510A8CD0026AF1A /* Minute.swift */,
+				CE7AAD5025B03C0600EC8036 /* CalculationCountryMap.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				D831DAF92510A6830026AF1A /* Astronomical.swift in Sources */,
 				D80FCBA725A65BF100512A84 /* CustomSearchBar.swift in Sources */,
 				D831DB032510A8420026AF1A /* CalculationMethod.swift in Sources */,
+				CE7AAD5125B03C0600EC8036 /* CalculationCountryMap.swift in Sources */,
 				D80FCB9725A65BA800512A84 /* CustomSearchController.swift in Sources */,
 				D831DB0D2510A8940026AF1A /* Prayer.swift in Sources */,
 				D831DB182510AF0A0026AF1A /* PrayerTimes.swift in Sources */,
