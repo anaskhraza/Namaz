@@ -15,11 +15,14 @@ enum PermissionStatus {
     static let NA = "NA"
 }
 
-
+protocol SetCoordinateProtocol {
+    func setLocationCoordinate(latitude:Double?, longitude:Double?)
+}
 
 class LocationManager: NSObject, CLLocationManagerDelegate {
     
     var locManager: CLLocationManager!
+    
     var latitude: Double!
     var longitude: Double!
     override init() {
@@ -52,12 +55,14 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
             // The user accepted authorization
         }
     }
+    var setLocationCoordinateProtocol:SetCoordinateProtocol?
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         latitude =  locValue.latitude
         longitude =  locValue.longitude
         print("locations = \(locValue.latitude) \(locValue.longitude)")
+        setLocationCoordinateProtocol?.setLocationCoordinate(latitude: locValue.latitude, longitude: locValue.longitude)
     }
     
     func getAuthorizationStatus() -> String {

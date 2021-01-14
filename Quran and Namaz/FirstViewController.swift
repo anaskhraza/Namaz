@@ -9,19 +9,22 @@
 import UIKit
 import MapKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, SetCoordinateProtocol, CalculationMap {
+   
     
     let myTabController = MyTabBarController()
     let locationManager = LocationManager()
     var coordinates: Coordinates!
     
+    func setLocationCoordinate(latitude: Double?, longitude: Double?) {
+        self.determineLocation(latitude: latitude ?? 25.157167, longitude: longitude ?? 51.517845)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        locationManager.setLocationCoordinateProtocol = self
         let authStatus = locationManager.getAuthorizationStatus()
-        
-        
-        
         if authStatus == PermissionStatus.NA {
             locationManager.getLocationPopup()
         }
@@ -77,8 +80,57 @@ class FirstViewController: UIViewController {
                     print("zip \(zip)")                }
                 // Country
                 if let country = placeMark.country {
-                    print("country \(country)")                }
+                    print("country \(country)")
+                }
+                if let timeZone = placeMark.timeZone {
+                        print("timeZone \(timeZone)")
+                }
         })
+    }
+    
+    private func CalculateTimes() {
+        
+    }
+    
+
+    private func determineLocation(latitude: Double!, longitude: Double! ) {
+        let geoCoder = CLGeocoder()
+        let location = CLLocation(latitude: latitude, longitude: longitude)
+        var timeZone: String!
+        var countryCode: String!
+        var country: String!
+        
+        
+        geoCoder.reverseGeocodeLocation(location, completionHandler:
+            {
+                placemarks, error -> Void in
+                
+                // Place details
+                guard let placeMark = placemarks?.first else { return }
+                
+                // Zip code
+                if let zip = placeMark.isoCountryCode {
+                    print("zip \(zip)")
+                    countryCode = zip
+                }
+                // Country
+                if let _country = placeMark.country {
+                    print("country \(_country)")
+                    country = _country
+                }
+                
+                if let _timeZone = placeMark.timeZone?.identifier {
+                        print("timeZone \(_timeZone)")
+                    timeZone = _timeZone
+                }
+            })
+        
+        
+        
+    }
+    
+    private func displayTime() {
+        
     }
     
 }
