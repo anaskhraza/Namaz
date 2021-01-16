@@ -11,12 +11,12 @@ import UIKit
 
 
 protocol CustomPickerViewProtocol {
-    func myPickerViewDidSelectRow(selectRowValue:String?, additionalParam:String?)
+    func myPickerViewDidSelectRow(pickerView: UIPickerView,selectRowValue:String?, additionalParam:String?)
 }
 
 extension CustomPickerViewProtocol {
-    func myPickerViewDidSelectRow(selectRowValue:String?) {
-        myPickerViewDidSelectRow(selectRowValue: selectRowValue, additionalParam:nil)
+    func myPickerViewDidSelectRow(pickerView: UIPickerView, selectRowValue:String?) {
+        myPickerViewDidSelectRow(pickerView: pickerView, selectRowValue: selectRowValue, additionalParam:nil)
     }
 }
 
@@ -49,10 +49,11 @@ class CustomPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSour
 
     //didSelectRow UIPickerView Delegate method that apple gives us
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //get your picker values that you need
+        //get your picker values that you nee
+        let pickerView1: UIPickerView = pickerView
+        print(pickerView1.tag)
         let theRowValue = oficinas[row]
-        propertyThatReferencesThisViewController?.myPickerViewDidSelectRow(selectRowValue: theRowValue["name"]! as? String, additionalParam: theRowValue["iso2"] as? String)
-
+        propertyThatReferencesThisViewController?.myPickerViewDidSelectRow(pickerView: pickerView1 ,selectRowValue: theRowValue["name"]! as? String, additionalParam: theRowValue["iso2"] as? String)
         //the ViewController func will be called passing the row value along
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class FirstViewController: UIViewController, SetCoordinateProtocol, CalculationMap {
+class FirstViewController: UIViewController, SetCoordinateProtocol {
    
     
     let myTabController = MyTabBarController()
@@ -28,18 +28,21 @@ class FirstViewController: UIViewController, SetCoordinateProtocol, CalculationM
         if authStatus == PermissionStatus.NA {
             locationManager.getLocationPopup()
         }
-
-                
+        
+    }
+    
+    private func CalculateTimes(params: CalculationParameters, timeZone: String?, latitude: Double!, longitude: Double!) {
+        
+        let coordinates = Coordinates(latitude: latitude, longitude: longitude)
         let cal = Calendar(identifier: Calendar.Identifier.gregorian)
         let formatter = DateFormatter()
         let date = cal.dateComponents([.year, .month, .day], from: Date())
-        let coordinates = Coordinates(latitude: 25.157167, longitude: 51.517845)
-        var params = CalculationMethod.qatar.params
-        params.madhab = .shafi
+        
         let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params)
         
         formatter.timeStyle = .medium
-        formatter.timeZone = TimeZone(identifier: "Asia/Qatar")!
+        
+        formatter.timeZone = TimeZone(identifier: timeZone ?? "Asia/Qatar")!
         
         print("fajr \(formatter.string(from: prayers!.fajr))")
         print("sunrise \(formatter.string(from: prayers!.sunrise))")
@@ -47,48 +50,6 @@ class FirstViewController: UIViewController, SetCoordinateProtocol, CalculationM
         print("asr \(formatter.string(from: prayers!.asr))")
         print("maghrib \(formatter.string(from: prayers!.maghrib))")
         print("isha \(formatter.string(from: prayers!.isha))")
-        
-        
-        
-        
-        
-        let current = prayers!.currentPrayer()
-        print("isha", current ?? "not found")
-        
-        let geoCoder = CLGeocoder()
-        let location = CLLocation(latitude: 25.157167, longitude: 51.517845)
-        geoCoder.reverseGeocodeLocation(location, completionHandler:
-            {
-                placemarks, error -> Void in
-                
-                // Place details
-                guard let placeMark = placemarks?.first else { return }
-                
-                // Location name
-                if let locationName = placeMark.location {
-                    print("location \(locationName)")
-                }
-                // Street address
-                if let street = placeMark.thoroughfare {
-                    print("Street \(street)")
-                }
-                // City
-                if let city = placeMark.subAdministrativeArea {
-                    print("city \(city)")                }
-                // Zip code
-                if let zip = placeMark.isoCountryCode {
-                    print("zip \(zip)")                }
-                // Country
-                if let country = placeMark.country {
-                    print("country \(country)")
-                }
-                if let timeZone = placeMark.timeZone {
-                        print("timeZone \(timeZone)")
-                }
-        })
-    }
-    
-    private func CalculateTimes() {
         
     }
     
@@ -99,7 +60,6 @@ class FirstViewController: UIViewController, SetCoordinateProtocol, CalculationM
         var timeZone: String!
         var countryCode: String!
         var country: String!
-        
         
         geoCoder.reverseGeocodeLocation(location, completionHandler:
             {
@@ -123,10 +83,19 @@ class FirstViewController: UIViewController, SetCoordinateProtocol, CalculationM
                         print("timeZone \(_timeZone)")
                     timeZone = _timeZone
                 }
+                
+                
+            
+                var params = CalculationMap().selectCalculationMethod(countryCode: countryCode)
+                
+                if(countryCode == "PK" || countryCode == "TR") {
+                    params.madhab = .hanafi
+                } else {
+                    params.madhab = .shafi
+                }
+                
+                self.CalculateTimes(params: params, timeZone: timeZone, latitude: latitude, longitude: longitude)
             })
-        
-        
-        
     }
     
     private func displayTime() {

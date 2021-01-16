@@ -12,13 +12,14 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
     
     var selectedRowValue: String?
     
-    func myPickerViewDidSelectRow(selectRowValue: String?, additionalParam: String?) {
+    func myPickerViewDidSelectRow(pickerView: UIPickerView, selectRowValue: String?, additionalParam: String?) {
         textField1.text = String(selectRowValue!)
         self.selectedRowValue = String(additionalParam!)
     }
     
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var textField3: UITextField!
     
     @IBOutlet var autoLocationSwitch: UISwitch!
     
@@ -29,6 +30,7 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
     }
     
     var pickerOficinas: CustomPickerView!
+    var pickerOficinas1: CustomPickerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,22 +48,33 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
         
         
         let myPickerView: UIPickerView = UIPickerView(frame: CGRect(x: 0, y: 200, width: self.view.frame.width, height: 300))
+        let myPickerView1: UIPickerView = UIPickerView(frame: CGRect(x: 0, y: 200, width: self.view.frame.width, height: 300))
         let toolBarControl = ToolbarControl()
         myPickerView.backgroundColor = .white
+        myPickerView.tag = 1
+        
         pickerOficinas = CustomPickerView(data: myEnglishArray)
+        
+        pickerOficinas1 = CustomPickerView(data: myEnglishArray)
+        
         myPickerView.dataSource = pickerOficinas //note: myPickerView is the outlet of type UIPickerView in your ViewController
         myPickerView.delegate = pickerOficinas
-        //HERE'S THE PROPERTY from our PickerView subclass that will point to this ViewController's protocol methods that we implemented. From the MyPickerViewProtocol
+        
+        myPickerView1.dataSource = pickerOficinas1 //note: myPickerView is the outlet of type UIPickerView in your ViewController
+        myPickerView1.delegate = pickerOficinas1
+        
         pickerOficinas.propertyThatReferencesThisViewController = self
+        pickerOficinas1.propertyThatReferencesThisViewController = self
         
         textField1.inputView = myPickerView
+        textField3.inputView = myPickerView1
+        myPickerView1.tag = 2
+        
         textField1.inputAccessoryView = toolBarControl.initiateToolBar()
-//        textField2.delegate = self
+        textField3.inputAccessoryView = toolBarControl.initiateToolBar()
+        
         textField2.isUserInteractionEnabled = false
  
-//        self.view.addSubview(myPickerView)
-//        myPickerView.center = self.view.center
-        // Do any additional setup after loading the view.
     }
 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {

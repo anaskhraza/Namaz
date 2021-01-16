@@ -254,11 +254,11 @@
 				D80FCB8425A4DDDB00512A84 /* ToolbarControl.swift */,
 				D80FCBA625A65BF100512A84 /* CustomSearchBar.swift */,
 				D80FCB9625A65BA800512A84 /* CustomSearchController.swift */,
+				CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */,
 				D8EDA35625061DE80045C7AE /* Main.storyboard */,
 				D8EDA35925061DEB0045C7AE /* Assets.xcassets */,
 				D8EDA35B25061DEB0045C7AE /* LaunchScreen.storyboard */,
 				D8EDA35E25061DEB0045C7AE /* Info.plist */,
-				CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */,
 			);
 			path = "Quran and Namaz";
 			sourceTree = "<group>";

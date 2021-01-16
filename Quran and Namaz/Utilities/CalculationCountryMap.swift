@@ -9,10 +9,10 @@
 import Foundation
 
 /* Madhab for determining how Asr is calculated */
-public struct CalculationMap {
+public class CalculationMap {
     
-    public func selectCalculationMethod(countryCode: String!) -> CalculationParameters? {
-        switch(countryCode) {
+    func selectCalculationMethod(countryCode shortCord: String!) -> CalculationParameters {
+        switch(shortCord) {
         case "QA":
             return CalculationMethod.qatar.params
         case "EG":
@@ -37,8 +37,14 @@ public struct CalculationMap {
             return CalculationMethod.tehran.params
         default:
             return CalculationMethod.muslimWorldLeague.params
-    }
+        }
         
+    }
+    
+    func getCalculationMethod() -> [String] {
+        
+        let calculationMethod = ["Turkey"]
+        return calculationMethod
     }
     
 }
