@@ -41,10 +41,24 @@ public class CalculationMap {
         
     }
     
-    func getCalculationMethod() -> [String] {
-        
-        let calculationMethod = ["Turkey"]
-        return calculationMethod
+}
+
+public struct CalMethod
+{
+    var name: String
+    var value: String
+    init(name: String, value: String)
+    {
+        self.value = value
+        self.name = name
     }
+}
+
+func getCalculationMethod() -> NSDictionary {
+    let countryName = ["Qatar", "Turkey", "Dubai", "Singapore", "North America", "Tehran", "Muslim World League", "Kuwait", "UmmAlQura", "Karachi", "Egyptian"]
+    let countryCode = ["QA", "TR", "AE", "SG", "NA", "IR", "Muslim World League", "KW", "SA", "PK", "EG"]
     
+    let calMethod = Dictionary(uniqueKeysWithValues: zip(countryName, countryCode))
+    
+    return (calMethod as NSDictionary?)!
 }
