@@ -24,11 +24,18 @@ extension CustomPickerViewProtocol {
 
 class CustomPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
     var oficinas: [NSDictionary] = []
+    var calMethod: NSDictionary = [:]
     
     convenience init(data: [NSDictionary]) {
         self.init()
         oficinas = data
     }
+    
+    convenience init(data: NSDictionary) {
+        self.init()
+        calMethod = data
+    }
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

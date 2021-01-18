@@ -36,10 +36,10 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
         super.viewDidLoad()
         
         autoLocationSwitch.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
-        
         autoLocationSwitch.isOn = false
         
         var myEnglishArray: [NSDictionary] = []
+        let calculationList: NSDictionary = getCalculationMethod()
         if let URL = Bundle.main.url(forResource: "CountriesDictionary", withExtension: "plist") {
             if let englishFromPlist = NSArray(contentsOf: URL) as? [NSDictionary] {
                 myEnglishArray = englishFromPlist
@@ -55,7 +55,7 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
         
         pickerOficinas = CustomPickerView(data: myEnglishArray)
         
-        pickerOficinas1 = CustomPickerView(data: myEnglishArray)
+        pickerOficinas1 = CustomPickerView(data: calculationList)
         
         myPickerView.dataSource = pickerOficinas //note: myPickerView is the outlet of type UIPickerView in your ViewController
         myPickerView.delegate = pickerOficinas
