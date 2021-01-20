@@ -44,6 +44,12 @@
 		D831DB1A2510AF340026AF1A /* Qibla.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB192510AF340026AF1A /* Qibla.swift */; };
 		D831DB1C2510AF500026AF1A /* Sunnah.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB1B2510AF500026AF1A /* Sunnah.swift */; };
 		D831DB1E251148C60026AF1A /* CountriesDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = D831DB1D251148C60026AF1A /* CountriesDictionary.plist */; };
+		D862E45125B8A7E0008CDDC1 /* CalendarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E45025B8A7E0008CDDC1 /* CalendarPickerViewController.swift */; };
+		D862E45C25B8A862008CDDC1 /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E45B25B8A862008CDDC1 /* MonthMetadata.swift */; };
+		D862E46625B8A883008CDDC1 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E46525B8A883008CDDC1 /* Day.swift */; };
+		D862E46C25B8A913008CDDC1 /* CalendarPickerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E46B25B8A913008CDDC1 /* CalendarPickerFooterView.swift */; };
+		D862E47225B8A921008CDDC1 /* CalendarPickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E47125B8A921008CDDC1 /* CalendarPickerHeaderView.swift */; };
+		D862E47825B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E47725B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift */; };
 		D872EC1225A21E2C0090D946 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872EC1125A21E2C0090D946 /* CustomPickerView.swift */; };
 		D8EDA34F25061DE80045C7AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA34E25061DE80045C7AE /* AppDelegate.swift */; };
 		D8EDA35125061DE80045C7AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA35025061DE80045C7AE /* SceneDelegate.swift */; };
@@ -133,6 +139,12 @@
 		D831DB192510AF340026AF1A /* Qibla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qibla.swift; sourceTree = "<group>"; };
 		D831DB1B2510AF500026AF1A /* Sunnah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sunnah.swift; sourceTree = "<group>"; };
 		D831DB1D251148C60026AF1A /* CountriesDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountriesDictionary.plist; sourceTree = "<group>"; };
+		D862E45025B8A7E0008CDDC1 /* CalendarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerViewController.swift; sourceTree = "<group>"; };
+		D862E45B25B8A862008CDDC1 /* MonthMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
+		D862E46525B8A883008CDDC1 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		D862E46B25B8A913008CDDC1 /* CalendarPickerFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerFooterView.swift; sourceTree = "<group>"; };
+		D862E47125B8A921008CDDC1 /* CalendarPickerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerHeaderView.swift; sourceTree = "<group>"; };
+		D862E47725B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		D872EC1125A21E2C0090D946 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
 		D8EDA34B25061DE80045C7AE /* Quran and Namaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quran and Namaz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EDA34E25061DE80045C7AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +230,26 @@
 			path = Prayer;
 			sourceTree = "<group>";
 		};
+		D862E44F25B8A78E008CDDC1 /* CalendarPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D862E45025B8A7E0008CDDC1 /* CalendarPickerViewController.swift */,
+				D862E46B25B8A913008CDDC1 /* CalendarPickerFooterView.swift */,
+				D862E47125B8A921008CDDC1 /* CalendarPickerHeaderView.swift */,
+				D862E47725B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift */,
+			);
+			path = CalendarPicker;
+			sourceTree = "<group>";
+		};
+		D862E45A25B8A83D008CDDC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D862E45B25B8A862008CDDC1 /* MonthMetadata.swift */,
+				D862E46525B8A883008CDDC1 /* Day.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D8EDA34225061DE80045C7AE = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +276,8 @@
 		D8EDA34D25061DE80045C7AE /* Quran and Namaz */ = {
 			isa = PBXGroup;
 			children = (
+				D862E45A25B8A83D008CDDC1 /* Model */,
+				D862E44F25B8A78E008CDDC1 /* CalendarPicker */,
 				CE52558725AEBE4D004D737B /* Quran and Namaz.entitlements */,
 				D80FCBAE25A6FB0900512A84 /* citiesMap.json */,
 				D831DB1D251148C60026AF1A /* CountriesDictionary.plist */,
@@ -484,9 +518,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D831DB0B2510A88A0026AF1A /* Madhab.swift in Sources */,
+				D862E45C25B8A862008CDDC1 /* MonthMetadata.swift in Sources */,
 				D8EDA35525061DE80045C7AE /* SecondViewController.swift in Sources */,
 				D831DB052510A85B0026AF1A /* CalculationParameters.swift in Sources */,
 				D80FCB8525A4DDDB00512A84 /* ToolbarControl.swift in Sources */,
+				D862E45125B8A7E0008CDDC1 /* CalendarPickerViewController.swift in Sources */,
 				D8EDA35325061DE80045C7AE /* FirstViewController.swift in Sources */,
 				D831DB092510A87C0026AF1A /* HighAltitudeRule.swift in Sources */,
 				D831DAFD2510A6AE0026AF1A /* SolarTime.swift in Sources */,
@@ -495,6 +531,7 @@
 				D804F47C25AC2F770030C60B /* WidgetExtension.intentdefinition in Sources */,
 				D831DB1C2510AF500026AF1A /* Sunnah.swift in Sources */,
 				D831DB012510A77D0026AF1A /* MathUtilities.swift in Sources */,
+				D862E46625B8A883008CDDC1 /* Day.swift in Sources */,
 				D831DB132510A8CD0026AF1A /* Minute.swift in Sources */,
 				D831DB0F2510A8AD0026AF1A /* PrayerAdjustment.swift in Sources */,
 				D831DAF92510A6830026AF1A /* Astronomical.swift in Sources */,
@@ -505,10 +542,13 @@
 				CE1DA1B325B7FB23002A6FEF /* ThirdViewController.swift in Sources */,
 				D831DB0D2510A8940026AF1A /* Prayer.swift in Sources */,
 				D831DB182510AF0A0026AF1A /* PrayerTimes.swift in Sources */,
+				D862E47225B8A921008CDDC1 /* CalendarPickerHeaderView.swift in Sources */,
 				D8EDA34F25061DE80045C7AE /* AppDelegate.swift in Sources */,
 				D831DB1A2510AF340026AF1A /* Qibla.swift in Sources */,
+				D862E47825B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift in Sources */,
 				D831DB112510A8C00026AF1A /* Angle.swift in Sources */,
 				D831DB072510A8680026AF1A /* Coordinates.swift in Sources */,
+				D862E46C25B8A913008CDDC1 /* CalendarPickerFooterView.swift in Sources */,
 				D831DAFF2510A76D0026AF1A /* DateUtilities.swift in Sources */,
 				D8EDA35125061DE80045C7AE /* SceneDelegate.swift in Sources */,
 				CE1DA1AD25B7F6DB002A6FEF /* QiblaDirectionManager.swift in Sources */,
