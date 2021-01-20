@@ -42,25 +42,46 @@ class CustomPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return oficinas.count
+        if(pickerView.tag == 1) {
+            return oficinas.count
+        } else {
+            return calMethod.count
+        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-          let row = oficinas[row]
-        return row["name"]! as? String
-       }
-
+        if(pickerView.tag == 1) {
+            let row = oficinas[row]
+            return row["name"]! as? String
+            
+        } else {
+            let keys = calMethod.allKeys
+            return keys[row] as? String
+        }
+    }
+    
     var someArray = [Int]()
     //This Property points to the ViewController conforming to the protocol. This property will only be able to access the stuff you put in the protocol. It won't access everything in your ViewController
     var propertyThatReferencesThisViewController:CustomPickerViewProtocol?
-
+    
     //didSelectRow UIPickerView Delegate method that apple gives us
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //get your picker values that you nee
         let pickerView1: UIPickerView = pickerView
-        print(pickerView1.tag)
-        let theRowValue = oficinas[row]
-        propertyThatReferencesThisViewController?.myPickerViewDidSelectRow(pickerView: pickerView1 ,selectRowValue: theRowValue["name"]! as? String, additionalParam: theRowValue["iso2"] as? String)
+        if(pickerView.tag == 1) {
+            let theRowValue = oficinas[row]
+            propertyThatReferencesThisViewController?.myPickerViewDidSelectRow(pickerView: pickerView1 ,selectRowValue: theRowValue["name"]! as? String, additionalParam: theRowValue["iso2"] as? String)
+            
+        } else {
+            let key = calMethod.allKeys[row]
+            let value = calMethod.allValues[row]
+            propertyThatReferencesThisViewController?.myPickerViewDidSelectRow(pickerView: pickerView1 ,selectRowValue: key as? String, additionalParam: value as? String)
+        }
+        
+        
+        
+        
         //the ViewController func will be called passing the row value along
     }
 }

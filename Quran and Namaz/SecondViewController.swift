@@ -13,8 +13,12 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
     var selectedRowValue: String?
     
     func myPickerViewDidSelectRow(pickerView: UIPickerView, selectRowValue: String?, additionalParam: String?) {
+        if(pickerView.tag == 1) {
         textField1.text = String(selectRowValue!)
         self.selectedRowValue = String(additionalParam!)
+        } else {
+            textField3.text = String(selectRowValue!)
+        }
     }
     
     @IBOutlet weak var textField1: UITextField!
@@ -40,6 +44,7 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
         
         var myEnglishArray: [NSDictionary] = []
         let calculationList: NSDictionary = getCalculationMethod()
+        
         if let URL = Bundle.main.url(forResource: "CountriesDictionary", withExtension: "plist") {
             if let englishFromPlist = NSArray(contentsOf: URL) as? [NSDictionary] {
                 myEnglishArray = englishFromPlist
@@ -50,6 +55,8 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
         let myPickerView: UIPickerView = UIPickerView(frame: CGRect(x: 0, y: 200, width: self.view.frame.width, height: 300))
         let myPickerView1: UIPickerView = UIPickerView(frame: CGRect(x: 0, y: 200, width: self.view.frame.width, height: 300))
         let toolBarControl = ToolbarControl()
+        let toolBarControl1 = ToolbarControl1()
+        
         myPickerView.backgroundColor = .white
         myPickerView.tag = 1
         
@@ -71,7 +78,7 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
         myPickerView1.tag = 2
         
         textField1.inputAccessoryView = toolBarControl.initiateToolBar()
-        textField3.inputAccessoryView = toolBarControl.initiateToolBar()
+        textField3.inputAccessoryView = toolBarControl1.initiateToolBar1()
         
         textField2.isUserInteractionEnabled = false
  
@@ -84,6 +91,13 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
     @objc func donePicker() {
         textField1.resignFirstResponder()
         if((textField1.text) != nil) {
+            textField2.isUserInteractionEnabled = true
+        }
+    }
+    
+    @objc func donePicker1() {
+        textField3.resignFirstResponder()
+        if((textField3.text) != nil) {
             textField2.isUserInteractionEnabled = true
         }
     }
