@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1DA1AD25B7F6DB002A6FEF /* QiblaDirectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1DA1AC25B7F6DB002A6FEF /* QiblaDirectionManager.swift */; };
+		CE1DA1B325B7FB23002A6FEF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1DA1B225B7FB23002A6FEF /* ThirdViewController.swift */; };
 		CE52558625AEBE3F004D737B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE52558525AEBE3F004D737B /* MapKit.framework */; };
 		CE6B75B925AD906B00BD45B9 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */; };
 		CE7AAD5125B03C0600EC8036 /* CalculationCountryMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AAD5025B03C0600EC8036 /* CalculationCountryMap.swift */; };
@@ -93,6 +95,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE1DA1AC25B7F6DB002A6FEF /* QiblaDirectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaDirectionManager.swift; sourceTree = "<group>"; };
+		CE1DA1B225B7FB23002A6FEF /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		CE52558525AEBE3F004D737B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE52558725AEBE4D004D737B /* Quran and Namaz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Quran and Namaz.entitlements"; sourceTree = "<group>"; };
 		CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
@@ -250,6 +254,7 @@
 				D8EDA35025061DE80045C7AE /* SceneDelegate.swift */,
 				D8EDA35225061DE80045C7AE /* FirstViewController.swift */,
 				D8EDA35425061DE80045C7AE /* SecondViewController.swift */,
+				CE1DA1B225B7FB23002A6FEF /* ThirdViewController.swift */,
 				D80FCB8E25A60F9200512A84 /* SearchViewController.swift */,
 				D80FCB8425A4DDDB00512A84 /* ToolbarControl.swift */,
 				D80FCBA625A65BF100512A84 /* CustomSearchBar.swift */,
@@ -300,6 +305,7 @@
 				D831DB102510A8C00026AF1A /* Angle.swift */,
 				D831DB122510A8CD0026AF1A /* Minute.swift */,
 				CE7AAD5025B03C0600EC8036 /* CalculationCountryMap.swift */,
+				CE1DA1AC25B7F6DB002A6FEF /* QiblaDirectionManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -496,6 +502,7 @@
 				D831DB032510A8420026AF1A /* CalculationMethod.swift in Sources */,
 				CE7AAD5125B03C0600EC8036 /* CalculationCountryMap.swift in Sources */,
 				D80FCB9725A65BA800512A84 /* CustomSearchController.swift in Sources */,
+				CE1DA1B325B7FB23002A6FEF /* ThirdViewController.swift in Sources */,
 				D831DB0D2510A8940026AF1A /* Prayer.swift in Sources */,
 				D831DB182510AF0A0026AF1A /* PrayerTimes.swift in Sources */,
 				D8EDA34F25061DE80045C7AE /* AppDelegate.swift in Sources */,
@@ -504,6 +511,7 @@
 				D831DB072510A8680026AF1A /* Coordinates.swift in Sources */,
 				D831DAFF2510A76D0026AF1A /* DateUtilities.swift in Sources */,
 				D8EDA35125061DE80045C7AE /* SceneDelegate.swift in Sources */,
+				CE1DA1AD25B7F6DB002A6FEF /* QiblaDirectionManager.swift in Sources */,
 				D872EC1225A21E2C0090D946 /* CustomPickerView.swift in Sources */,
 				D831DB162510AEDF0026AF1A /* Adhan.swift in Sources */,
 				D831DAFB2510A6990026AF1A /* SolarCoordinates.swift in Sources */,

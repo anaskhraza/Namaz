@@ -32,7 +32,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="768" y="-455"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -118,7 +118,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="359.59821428571428"/>
+            <point key="canvasLocation" x="767" y="226"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="c9Q-Gj-XA1">
+            <objects>
+                <viewController id="9m6-bU-3wE" customClass="ThirdViewController" customModule="Quran_and_Namaz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rfh-0W-Rle">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compassback" translatesAutoresizingMaskIntoConstraints="NO" id="XIo-2X-LwO">
+                                <rect key="frame" x="0.0" y="271" width="414" height="354"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="needleneedle" translatesAutoresizingMaskIntoConstraints="NO" id="Rik-Ul-k7L">
+                                <rect key="frame" x="76" y="322.5" width="262" height="251"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DxT-9X-v4r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XIo-2X-LwO" firstAttribute="centerY" secondItem="Rfh-0W-Rle" secondAttribute="centerY" id="Baz-QR-Hui"/>
+                            <constraint firstItem="Rik-Ul-k7L" firstAttribute="width" secondItem="XIo-2X-LwO" secondAttribute="width" multiplier="0.63285" id="Dab-NS-6ot"/>
+                            <constraint firstItem="Rik-Ul-k7L" firstAttribute="centerX" secondItem="XIo-2X-LwO" secondAttribute="centerX" id="LBV-zE-V5P"/>
+                            <constraint firstItem="Rik-Ul-k7L" firstAttribute="height" secondItem="XIo-2X-LwO" secondAttribute="height" multiplier="0.70904" id="PE4-hC-e2d"/>
+                            <constraint firstItem="XIo-2X-LwO" firstAttribute="centerX" secondItem="Rfh-0W-Rle" secondAttribute="centerX" id="c3V-uj-fnk"/>
+                            <constraint firstItem="Rik-Ul-k7L" firstAttribute="centerY" secondItem="XIo-2X-LwO" secondAttribute="centerY" id="mdY-fS-XVm"/>
+                            <constraint firstItem="XIo-2X-LwO" firstAttribute="top" secondItem="DxT-9X-v4r" secondAttribute="top" constant="227" id="ojy-3c-tr7"/>
+                            <constraint firstItem="Rik-Ul-k7L" firstAttribute="leading" secondItem="DxT-9X-v4r" secondAttribute="leading" constant="76" id="pT0-6D-xgI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" id="g8O-sl-tc4"/>
+                    <connections>
+                        <outlet property="ivCompassBack" destination="XIo-2X-LwO" id="4oQ-lu-fMS"/>
+                        <outlet property="ivCompassNeedle" destination="Rik-Ul-k7L" id="3nR-aF-oZq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ds-kt-n0k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="736.60714285714278"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -132,6 +170,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="W3C-cs-vBb"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="MP7-vV-zBE"/>
+                        <segue destination="9m6-bU-3wE" kind="relationship" relationship="viewControllers" id="RnE-Ji-D8e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -186,11 +225,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooo-6b-hUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715.9420289855075" y="359.59821428571428"/>
+            <point key="canvasLocation" x="1732" y="238"/>
         </scene>
     </scenes>
     <resources>
+        <image name="compassback" width="752" height="752"/>
         <image name="first" width="30" height="30"/>
+        <image name="needleneedle" width="79" height="747"/>
         <image name="second" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
