@@ -24,6 +24,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emn-P0-RQf">
+                                <rect key="frame" x="42" y="289" width="313" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69098466634750366" green="0.99645775556564331" blue="0.0027943751774728298" alpha="0.9998779297" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="6K4-Hy-N72" kind="show" id="MEv-Rn-wgN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -32,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768" y="-455"/>
+            <point key="canvasLocation" x="766.66666666666674" y="-455.35714285714283"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -225,7 +234,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooo-6b-hUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="238"/>
+            <point key="canvasLocation" x="1732" y="226"/>
+        </scene>
+        <!--Calendar Picker View Controller-->
+        <scene sceneID="R3k-6Y-bCc">
+            <objects>
+                <viewController id="6K4-Hy-N72" customClass="CalendarPickerViewController" customModule="Quran_and_Namaz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GON-GY-Vgt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TTd-vj-jlF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mf8-h8-BIR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hif-oF-TuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="-455"/>
         </scene>
     </scenes>
     <resources>
