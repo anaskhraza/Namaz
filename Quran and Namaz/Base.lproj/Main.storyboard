@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -236,21 +237,153 @@
             </objects>
             <point key="canvasLocation" x="1732" y="226"/>
         </scene>
-        <!--Calendar Picker View Controller-->
+        <!--Calendar View Controller-->
         <scene sceneID="R3k-6Y-bCc">
             <objects>
-                <viewController id="6K4-Hy-N72" customClass="CalendarPickerViewController" customModule="Quran_and_Namaz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6K4-Hy-N72" customClass="CalendarViewController" customModule="Quran_and_Namaz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GON-GY-Vgt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-h7-0Sa" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                <rect key="frame" x="20" y="139" width="374" height="400"/>
+                                <color key="backgroundColor" red="0.0" green="0.47058823529999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="ZUk-Sp-0A6"/>
+                                    <constraint firstAttribute="width" constant="374" id="bmq-Wt-5sk"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dWn-uv-ZvA">
+                                    <size key="itemSize" width="95" height="76"/>
+                                    <size key="headerReferenceSize" width="50" height="131"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dateCell" id="JYv-MH-DqQ" customClass="DateCell" customModule="Quran_and_Namaz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="131" width="95" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2rb-Ky-IzK">
+                                            <rect key="frame" x="0.0" y="0.0" width="95" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7u-V7-92E">
+                                                    <rect key="frame" x="26.5" y="27.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e7u-V7-92E" firstAttribute="centerX" secondItem="2rb-Ky-IzK" secondAttribute="centerX" id="9Ft-al-9P4"/>
+                                                <constraint firstItem="e7u-V7-92E" firstAttribute="centerY" secondItem="2rb-Ky-IzK" secondAttribute="centerY" id="hpb-f1-Kdg"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <size key="customSize" width="95" height="76"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="e7u-V7-92E" id="g84-p9-TPa"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DateHeader" id="6fN-i3-Gmp" customClass="DateHeader" customModule="Quran_and_Namaz" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="131"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBs-US-ViF">
+                                            <rect key="frame" x="0.0" y="8" width="374" height="60"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-Md-0TL">
+                                                    <rect key="frame" x="153" y="8" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv6-mP-KQZ">
+                                                    <rect key="frame" x="5" y="31" width="30" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUf-t3-UPp">
+                                                    <rect key="frame" x="51" y="31" width="34" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfA-6c-2dv">
+                                                    <rect key="frame" x="108" y="31" width="28" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xO-hP-9eK">
+                                                    <rect key="frame" x="154" y="31" width="35" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i0-b2-Ihm">
+                                                    <rect key="frame" x="206" y="31" width="30" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAC-5J-QVY">
+                                                    <rect key="frame" x="262" y="31" width="20" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKz-6T-SQ0">
+                                                    <rect key="frame" x="307" y="31" width="26" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kBs-US-ViF" firstAttribute="leading" secondItem="6fN-i3-Gmp" secondAttribute="leadingMargin" constant="-8" id="097-BU-kBK"/>
+                                        <constraint firstItem="kBs-US-ViF" firstAttribute="top" secondItem="6fN-i3-Gmp" secondAttribute="topMargin" id="Vcu-07-LCu"/>
+                                        <constraint firstItem="kBs-US-ViF" firstAttribute="centerX" secondItem="6fN-i3-Gmp" secondAttribute="centerX" id="r62-ju-xZf"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="kBs-US-ViF" secondAttribute="bottom" constant="55" id="vOX-MA-WIF"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="monthTitle" destination="NUl-Md-0TL" id="a7N-Pi-LWJ"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="ibCalendarDataSource" destination="6K4-Hy-N72" id="eGC-DW-aji"/>
+                                    <outlet property="ibCalendarDelegate" destination="6K4-Hy-N72" id="Dgo-e5-KKF"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TTd-vj-jlF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ff-h7-0Sa" firstAttribute="leading" secondItem="TTd-vj-jlF" secondAttribute="leading" constant="20" id="h84-YQ-TJI"/>
+                            <constraint firstItem="6Ff-h7-0Sa" firstAttribute="top" secondItem="TTd-vj-jlF" secondAttribute="top" constant="139" id="uCq-L6-Qb6"/>
+                            <constraint firstItem="TTd-vj-jlF" firstAttribute="trailing" secondItem="6Ff-h7-0Sa" secondAttribute="trailing" constant="20" id="yo9-4l-quT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mf8-h8-BIR"/>
+                    <connections>
+                        <outlet property="calendarView" destination="6Ff-h7-0Sa" id="R08-1S-CMM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hif-oF-TuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="-455"/>
+            <point key="canvasLocation" x="1731.8840579710147" y="-455.35714285714283"/>
         </scene>
     </scenes>
     <resources>
@@ -263,6 +396,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

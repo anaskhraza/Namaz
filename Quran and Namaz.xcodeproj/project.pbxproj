@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23AA492E3712322FB0841AE8 /* Pods_Quran_and_Namaz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA4FA3FC8AF25F228A0FAAE /* Pods_Quran_and_Namaz.framework */; };
+		879D5682440DBBE790E9D0DA /* Pods_Quran_and_NamazTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00653D190B92CB1ABF518E8E /* Pods_Quran_and_NamazTests.framework */; };
+		BE893608D60CE956389C558C /* Pods_Quran_and_Namaz_Quran_and_NamazUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC912F2AE5890C97A7A495 /* Pods_Quran_and_Namaz_Quran_and_NamazUITests.framework */; };
 		CE1DA1AD25B7F6DB002A6FEF /* QiblaDirectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1DA1AC25B7F6DB002A6FEF /* QiblaDirectionManager.swift */; };
 		CE1DA1B325B7FB23002A6FEF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1DA1B225B7FB23002A6FEF /* ThirdViewController.swift */; };
 		CE52558625AEBE3F004D737B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE52558525AEBE3F004D737B /* MapKit.framework */; };
@@ -44,13 +47,12 @@
 		D831DB1A2510AF340026AF1A /* Qibla.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB192510AF340026AF1A /* Qibla.swift */; };
 		D831DB1C2510AF500026AF1A /* Sunnah.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831DB1B2510AF500026AF1A /* Sunnah.swift */; };
 		D831DB1E251148C60026AF1A /* CountriesDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = D831DB1D251148C60026AF1A /* CountriesDictionary.plist */; };
-		D862E45125B8A7E0008CDDC1 /* CalendarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E45025B8A7E0008CDDC1 /* CalendarPickerViewController.swift */; };
 		D862E45C25B8A862008CDDC1 /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E45B25B8A862008CDDC1 /* MonthMetadata.swift */; };
 		D862E46625B8A883008CDDC1 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E46525B8A883008CDDC1 /* Day.swift */; };
-		D862E46C25B8A913008CDDC1 /* CalendarPickerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E46B25B8A913008CDDC1 /* CalendarPickerFooterView.swift */; };
-		D862E47225B8A921008CDDC1 /* CalendarPickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E47125B8A921008CDDC1 /* CalendarPickerHeaderView.swift */; };
-		D862E47825B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862E47725B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift */; };
 		D872EC1225A21E2C0090D946 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872EC1125A21E2C0090D946 /* CustomPickerView.swift */; };
+		D8AC48DE25EEBB2A00FC6CC8 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AC48DD25EEBB2A00FC6CC8 /* CalendarViewController.swift */; };
+		D8AC48EE25EEBEF100FC6CC8 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AC48EC25EEBEF100FC6CC8 /* DateHeader.swift */; };
+		D8AC48EF25EEBEF100FC6CC8 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AC48ED25EEBEF100FC6CC8 /* DateCell.swift */; };
 		D8EDA34F25061DE80045C7AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA34E25061DE80045C7AE /* AppDelegate.swift */; };
 		D8EDA35125061DE80045C7AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA35025061DE80045C7AE /* SceneDelegate.swift */; };
 		D8EDA35325061DE80045C7AE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA35225061DE80045C7AE /* FirstViewController.swift */; };
@@ -60,6 +62,7 @@
 		D8EDA35D25061DEB0045C7AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EDA35B25061DEB0045C7AE /* LaunchScreen.storyboard */; };
 		D8EDA36825061DEB0045C7AE /* Quran_and_NamazTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA36725061DEB0045C7AE /* Quran_and_NamazTests.swift */; };
 		D8EDA37325061DEB0045C7AE /* Quran_and_NamazUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA37225061DEB0045C7AE /* Quran_and_NamazUITests.swift */; };
+		F915CE2DFEDEDE6FA92917B1 /* Pods_WidgetExtensionExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A1A1750F44D2B1F9FE8A8 /* Pods_WidgetExtensionExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00653D190B92CB1ABF518E8E /* Pods_Quran_and_NamazTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quran_and_NamazTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0855CB0FC60A587E1A3BDAE8 /* Pods-Quran and Namaz-Quran and NamazUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quran and Namaz-Quran and NamazUITests.release.xcconfig"; path = "Target Support Files/Pods-Quran and Namaz-Quran and NamazUITests/Pods-Quran and Namaz-Quran and NamazUITests.release.xcconfig"; sourceTree = "<group>"; };
+		151ABD26930E25CB5ECBF922 /* Pods-WidgetExtensionExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetExtensionExtension.debug.xcconfig"; path = "Target Support Files/Pods-WidgetExtensionExtension/Pods-WidgetExtensionExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		3D2E5DB74C3220332DEC2071 /* Pods-Quran and NamazTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quran and NamazTests.debug.xcconfig"; path = "Target Support Files/Pods-Quran and NamazTests/Pods-Quran and NamazTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AB8E0964422D81D791BA667 /* Pods-Quran and Namaz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quran and Namaz.debug.xcconfig"; path = "Target Support Files/Pods-Quran and Namaz/Pods-Quran and Namaz.debug.xcconfig"; sourceTree = "<group>"; };
+		7875579B96F888ADE50CB1A6 /* Pods-Quran and Namaz-Quran and NamazUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quran and Namaz-Quran and NamazUITests.debug.xcconfig"; path = "Target Support Files/Pods-Quran and Namaz-Quran and NamazUITests/Pods-Quran and Namaz-Quran and NamazUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EA4FA3FC8AF25F228A0FAAE /* Pods_Quran_and_Namaz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quran_and_Namaz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DC912F2AE5890C97A7A495 /* Pods_Quran_and_Namaz_Quran_and_NamazUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quran_and_Namaz_Quran_and_NamazUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD11B734C872AFE443C2A9F /* Pods-Quran and Namaz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quran and Namaz.release.xcconfig"; path = "Target Support Files/Pods-Quran and Namaz/Pods-Quran and Namaz.release.xcconfig"; sourceTree = "<group>"; };
 		CE1DA1AC25B7F6DB002A6FEF /* QiblaDirectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaDirectionManager.swift; sourceTree = "<group>"; };
 		CE1DA1B225B7FB23002A6FEF /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		CE52558525AEBE3F004D737B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -139,13 +151,12 @@
 		D831DB192510AF340026AF1A /* Qibla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qibla.swift; sourceTree = "<group>"; };
 		D831DB1B2510AF500026AF1A /* Sunnah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sunnah.swift; sourceTree = "<group>"; };
 		D831DB1D251148C60026AF1A /* CountriesDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountriesDictionary.plist; sourceTree = "<group>"; };
-		D862E45025B8A7E0008CDDC1 /* CalendarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerViewController.swift; sourceTree = "<group>"; };
 		D862E45B25B8A862008CDDC1 /* MonthMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
 		D862E46525B8A883008CDDC1 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		D862E46B25B8A913008CDDC1 /* CalendarPickerFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerFooterView.swift; sourceTree = "<group>"; };
-		D862E47125B8A921008CDDC1 /* CalendarPickerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerHeaderView.swift; sourceTree = "<group>"; };
-		D862E47725B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		D872EC1125A21E2C0090D946 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		D8AC48DD25EEBB2A00FC6CC8 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D8AC48EC25EEBEF100FC6CC8 /* DateHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		D8AC48ED25EEBEF100FC6CC8 /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		D8EDA34B25061DE80045C7AE /* Quran and Namaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quran and Namaz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EDA34E25061DE80045C7AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8EDA35025061DE80045C7AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +172,9 @@
 		D8EDA36E25061DEB0045C7AE /* Quran and NamazUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quran and NamazUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EDA37225061DEB0045C7AE /* Quran_and_NamazUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran_and_NamazUITests.swift; sourceTree = "<group>"; };
 		D8EDA37425061DEB0045C7AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E15163DF6AC82E70AED2D765 /* Pods-Quran and NamazTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quran and NamazTests.release.xcconfig"; path = "Target Support Files/Pods-Quran and NamazTests/Pods-Quran and NamazTests.release.xcconfig"; sourceTree = "<group>"; };
+		E46A1A1750F44D2B1F9FE8A8 /* Pods_WidgetExtensionExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WidgetExtensionExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF25B8A13B0636C428C6C4A3 /* Pods-WidgetExtensionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetExtensionExtension.release.xcconfig"; path = "Target Support Files/Pods-WidgetExtensionExtension/Pods-WidgetExtensionExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +184,7 @@
 			files = (
 				D804F47325AC2F760030C60B /* SwiftUI.framework in Frameworks */,
 				D804F47125AC2F760030C60B /* WidgetKit.framework in Frameworks */,
+				F915CE2DFEDEDE6FA92917B1 /* Pods_WidgetExtensionExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE52558625AEBE3F004D737B /* MapKit.framework in Frameworks */,
+				23AA492E3712322FB0841AE8 /* Pods_Quran_and_Namaz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879D5682440DBBE790E9D0DA /* Pods_Quran_and_NamazTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,18 +209,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE893608D60CE956389C558C /* Pods_Quran_and_Namaz_Quran_and_NamazUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28125BC5A2D247E20A9FE6CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AB8E0964422D81D791BA667 /* Pods-Quran and Namaz.debug.xcconfig */,
+				BBD11B734C872AFE443C2A9F /* Pods-Quran and Namaz.release.xcconfig */,
+				7875579B96F888ADE50CB1A6 /* Pods-Quran and Namaz-Quran and NamazUITests.debug.xcconfig */,
+				0855CB0FC60A587E1A3BDAE8 /* Pods-Quran and Namaz-Quran and NamazUITests.release.xcconfig */,
+				3D2E5DB74C3220332DEC2071 /* Pods-Quran and NamazTests.debug.xcconfig */,
+				E15163DF6AC82E70AED2D765 /* Pods-Quran and NamazTests.release.xcconfig */,
+				151ABD26930E25CB5ECBF922 /* Pods-WidgetExtensionExtension.debug.xcconfig */,
+				FF25B8A13B0636C428C6C4A3 /* Pods-WidgetExtensionExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D804F46F25AC2F760030C60B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				CE52558525AEBE3F004D737B /* MapKit.framework */,
 				D804F47025AC2F760030C60B /* WidgetKit.framework */,
 				D804F47225AC2F760030C60B /* SwiftUI.framework */,
+				9EA4FA3FC8AF25F228A0FAAE /* Pods_Quran_and_Namaz.framework */,
+				A1DC912F2AE5890C97A7A495 /* Pods_Quran_and_Namaz_Quran_and_NamazUITests.framework */,
+				00653D190B92CB1ABF518E8E /* Pods_Quran_and_NamazTests.framework */,
+				E46A1A1750F44D2B1F9FE8A8 /* Pods_WidgetExtensionExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -233,10 +270,9 @@
 		D862E44F25B8A78E008CDDC1 /* CalendarPicker */ = {
 			isa = PBXGroup;
 			children = (
-				D862E45025B8A7E0008CDDC1 /* CalendarPickerViewController.swift */,
-				D862E46B25B8A913008CDDC1 /* CalendarPickerFooterView.swift */,
-				D862E47125B8A921008CDDC1 /* CalendarPickerHeaderView.swift */,
-				D862E47725B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift */,
+				D8AC48ED25EEBEF100FC6CC8 /* DateCell.swift */,
+				D8AC48EC25EEBEF100FC6CC8 /* DateHeader.swift */,
+				D8AC48DD25EEBB2A00FC6CC8 /* CalendarViewController.swift */,
 			);
 			path = CalendarPicker;
 			sourceTree = "<group>";
@@ -259,6 +295,7 @@
 				D804F47425AC2F760030C60B /* WidgetExtension */,
 				D804F46F25AC2F760030C60B /* Frameworks */,
 				D8EDA34C25061DE80045C7AE /* Products */,
+				28125BC5A2D247E20A9FE6CF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,6 +388,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D804F48325AC2F770030C60B /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */;
 			buildPhases = (
+				EC7557466980059C2A9396C7 /* [CP] Check Pods Manifest.lock */,
 				D804F46A25AC2F760030C60B /* Sources */,
 				D804F46B25AC2F760030C60B /* Frameworks */,
 				D804F46C25AC2F760030C60B /* Resources */,
@@ -368,10 +406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8EDA37725061DEB0045C7AE /* Build configuration list for PBXNativeTarget "Quran and Namaz" */;
 			buildPhases = (
+				56CD14546B2CF90B07E2FC08 /* [CP] Check Pods Manifest.lock */,
 				D8EDA34725061DE80045C7AE /* Sources */,
 				D8EDA34825061DE80045C7AE /* Frameworks */,
 				D8EDA34925061DE80045C7AE /* Resources */,
 				D804F48025AC2F770030C60B /* Embed App Extensions */,
+				5A18A23BB8F8E167ABE783A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -387,6 +427,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8EDA37A25061DEB0045C7AE /* Build configuration list for PBXNativeTarget "Quran and NamazTests" */;
 			buildPhases = (
+				E75A9F0ECF037B12F9F35BFB /* [CP] Check Pods Manifest.lock */,
 				D8EDA35F25061DEB0045C7AE /* Sources */,
 				D8EDA36025061DEB0045C7AE /* Frameworks */,
 				D8EDA36125061DEB0045C7AE /* Resources */,
@@ -405,9 +446,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8EDA37D25061DEB0045C7AE /* Build configuration list for PBXNativeTarget "Quran and NamazUITests" */;
 			buildPhases = (
+				919AEBC5F486CFC2EAFA8F99 /* [CP] Check Pods Manifest.lock */,
 				D8EDA36A25061DEB0045C7AE /* Sources */,
 				D8EDA36B25061DEB0045C7AE /* Frameworks */,
 				D8EDA36C25061DEB0045C7AE /* Resources */,
+				DE32705F6EBFDA9052CD4650 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -503,6 +546,131 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56CD14546B2CF90B07E2FC08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quran and Namaz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A18A23BB8F8E167ABE783A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quran and Namaz/Pods-Quran and Namaz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quran and Namaz/Pods-Quran and Namaz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quran and Namaz/Pods-Quran and Namaz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		919AEBC5F486CFC2EAFA8F99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quran and Namaz-Quran and NamazUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE32705F6EBFDA9052CD4650 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quran and Namaz-Quran and NamazUITests/Pods-Quran and Namaz-Quran and NamazUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quran and Namaz-Quran and NamazUITests/Pods-Quran and Namaz-Quran and NamazUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quran and Namaz-Quran and NamazUITests/Pods-Quran and Namaz-Quran and NamazUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E75A9F0ECF037B12F9F35BFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quran and NamazTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC7557466980059C2A9396C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WidgetExtensionExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D804F46A25AC2F760030C60B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -518,11 +686,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D831DB0B2510A88A0026AF1A /* Madhab.swift in Sources */,
+				D8AC48EF25EEBEF100FC6CC8 /* DateCell.swift in Sources */,
 				D862E45C25B8A862008CDDC1 /* MonthMetadata.swift in Sources */,
 				D8EDA35525061DE80045C7AE /* SecondViewController.swift in Sources */,
 				D831DB052510A85B0026AF1A /* CalculationParameters.swift in Sources */,
 				D80FCB8525A4DDDB00512A84 /* ToolbarControl.swift in Sources */,
-				D862E45125B8A7E0008CDDC1 /* CalendarPickerViewController.swift in Sources */,
 				D8EDA35325061DE80045C7AE /* FirstViewController.swift in Sources */,
 				D831DB092510A87C0026AF1A /* HighAltitudeRule.swift in Sources */,
 				D831DAFD2510A6AE0026AF1A /* SolarTime.swift in Sources */,
@@ -542,17 +710,16 @@
 				CE1DA1B325B7FB23002A6FEF /* ThirdViewController.swift in Sources */,
 				D831DB0D2510A8940026AF1A /* Prayer.swift in Sources */,
 				D831DB182510AF0A0026AF1A /* PrayerTimes.swift in Sources */,
-				D862E47225B8A921008CDDC1 /* CalendarPickerHeaderView.swift in Sources */,
+				D8AC48DE25EEBB2A00FC6CC8 /* CalendarViewController.swift in Sources */,
 				D8EDA34F25061DE80045C7AE /* AppDelegate.swift in Sources */,
 				D831DB1A2510AF340026AF1A /* Qibla.swift in Sources */,
-				D862E47825B8A935008CDDC1 /* CalendarDateCollectionViewCell.swift in Sources */,
 				D831DB112510A8C00026AF1A /* Angle.swift in Sources */,
 				D831DB072510A8680026AF1A /* Coordinates.swift in Sources */,
-				D862E46C25B8A913008CDDC1 /* CalendarPickerFooterView.swift in Sources */,
 				D831DAFF2510A76D0026AF1A /* DateUtilities.swift in Sources */,
 				D8EDA35125061DE80045C7AE /* SceneDelegate.swift in Sources */,
 				CE1DA1AD25B7F6DB002A6FEF /* QiblaDirectionManager.swift in Sources */,
 				D872EC1225A21E2C0090D946 /* CustomPickerView.swift in Sources */,
+				D8AC48EE25EEBEF100FC6CC8 /* DateHeader.swift in Sources */,
 				D831DB162510AEDF0026AF1A /* Adhan.swift in Sources */,
 				D831DAFB2510A6990026AF1A /* SolarCoordinates.swift in Sources */,
 				CE6B75B925AD906B00BD45B9 /* MyTabBarController.swift in Sources */,
@@ -617,6 +784,7 @@
 /* Begin XCBuildConfiguration section */
 		D804F48125AC2F770030C60B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151ABD26930E25CB5ECBF922 /* Pods-WidgetExtensionExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -640,6 +808,7 @@
 		};
 		D804F48225AC2F770030C60B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF25B8A13B0636C428C6C4A3 /* Pods-WidgetExtensionExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -777,6 +946,7 @@
 		};
 		D8EDA37825061DEB0045C7AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB8E0964422D81D791BA667 /* Pods-Quran and Namaz.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -798,6 +968,7 @@
 		};
 		D8EDA37925061DEB0045C7AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD11B734C872AFE443C2A9F /* Pods-Quran and Namaz.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -819,6 +990,7 @@
 		};
 		D8EDA37B25061DEB0045C7AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2E5DB74C3220332DEC2071 /* Pods-Quran and NamazTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -841,6 +1013,7 @@
 		};
 		D8EDA37C25061DEB0045C7AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15163DF6AC82E70AED2D765 /* Pods-Quran and NamazTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -863,6 +1036,7 @@
 		};
 		D8EDA37E25061DEB0045C7AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7875579B96F888ADE50CB1A6 /* Pods-Quran and Namaz-Quran and NamazUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -883,6 +1057,7 @@
 		};
 		D8EDA37F25061DEB0045C7AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0855CB0FC60A587E1A3BDAE8 /* Pods-Quran and Namaz-Quran and NamazUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
