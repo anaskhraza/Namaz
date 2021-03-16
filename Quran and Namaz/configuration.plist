@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>useLocation</key>
+	<true/>
+	<key>madhab</key>
+	<integer>1</integer>
+	<key>calculationMethod</key>
+	<string>SA</string>
+	<key>dateAdjustment</key>
+	<integer>0</integer>
+	<key>country</key>
+	<string>SA</string>
+	<key>city</key>
+	<string>Medina</string>
+	<key>latitude</key>
+	<string>24.46861</string>
+	<key>longitude</key>
+	<string>39.61417</string>
+</dict>
+</plist>
