@@ -315,22 +315,19 @@
 			children = (
 				D862E45A25B8A83D008CDDC1 /* Model */,
 				D862E44F25B8A78E008CDDC1 /* CalendarPicker */,
-				CE52558725AEBE4D004D737B /* Quran and Namaz.entitlements */,
-				D80FCBAE25A6FB0900512A84 /* citiesMap.json */,
-				D831DB1D251148C60026AF1A /* CountriesDictionary.plist */,
 				D831DB142510AEB20026AF1A /* Prayer */,
-				D8FBD2A2250F8507002AA2E6 /* Utilities */,
+				D8FBD2A2250F8507002AA2E6 /* PrayerUtilities */,
+				D8EEFD9E2600B8390020A55A /* PickerControl */,
+				D8EEFDA32600B86A0020A55A /* SearchControl */,
 				D8EDA34E25061DE80045C7AE /* AppDelegate.swift */,
-				D872EC1125A21E2C0090D946 /* CustomPickerView.swift */,
+				D80FCBAE25A6FB0900512A84 /* citiesMap.json */,
+				CE52558725AEBE4D004D737B /* Quran and Namaz.entitlements */,
+				D831DB1D251148C60026AF1A /* CountriesDictionary.plist */,
 				D8EDA35025061DE80045C7AE /* SceneDelegate.swift */,
+				CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */,
 				D8EDA35225061DE80045C7AE /* FirstViewController.swift */,
 				D8EDA35425061DE80045C7AE /* SecondViewController.swift */,
 				CE1DA1B225B7FB23002A6FEF /* ThirdViewController.swift */,
-				D80FCB8E25A60F9200512A84 /* SearchViewController.swift */,
-				D80FCB8425A4DDDB00512A84 /* ToolbarControl.swift */,
-				D80FCBA625A65BF100512A84 /* CustomSearchBar.swift */,
-				D80FCB9625A65BA800512A84 /* CustomSearchController.swift */,
-				CE6B75B825AD906B00BD45B9 /* MyTabBarController.swift */,
 				D8EDA35625061DE80045C7AE /* Main.storyboard */,
 				D8EDA35925061DEB0045C7AE /* Assets.xcassets */,
 				D8EDA35B25061DEB0045C7AE /* LaunchScreen.storyboard */,
@@ -357,7 +354,26 @@
 			path = "Quran and NamazUITests";
 			sourceTree = "<group>";
 		};
-		D8FBD2A2250F8507002AA2E6 /* Utilities */ = {
+		D8EEFD9E2600B8390020A55A /* PickerControl */ = {
+			isa = PBXGroup;
+			children = (
+				D872EC1125A21E2C0090D946 /* CustomPickerView.swift */,
+			);
+			path = PickerControl;
+			sourceTree = "<group>";
+		};
+		D8EEFDA32600B86A0020A55A /* SearchControl */ = {
+			isa = PBXGroup;
+			children = (
+				D80FCB8E25A60F9200512A84 /* SearchViewController.swift */,
+				D80FCB8425A4DDDB00512A84 /* ToolbarControl.swift */,
+				D80FCBA625A65BF100512A84 /* CustomSearchBar.swift */,
+				D80FCB9625A65BA800512A84 /* CustomSearchController.swift */,
+			);
+			path = SearchControl;
+			sourceTree = "<group>";
+		};
+		D8FBD2A2250F8507002AA2E6 /* PrayerUtilities */ = {
 			isa = PBXGroup;
 			children = (
 				D831DAF62510A6590026AF1A /* LocationManager.swift */,
@@ -378,7 +394,7 @@
 				CE7AAD5025B03C0600EC8036 /* CalculationCountryMap.swift */,
 				CE1DA1AC25B7F6DB002A6FEF /* QiblaDirectionManager.swift */,
 			);
-			path = Utilities;
+			path = PrayerUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

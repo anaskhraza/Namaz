@@ -367,11 +367,23 @@
                                     <outlet property="ibCalendarDelegate" destination="6K4-Hy-N72" id="Dgo-e5-KKF"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPi-kN-8we">
+                                <rect key="frame" x="20" y="586" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4ci-Cd-skx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TTd-vj-jlF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pPi-kN-8we" firstAttribute="top" secondItem="6Ff-h7-0Sa" secondAttribute="bottom" constant="47" id="Ute-54-djP"/>
+                            <constraint firstItem="pPi-kN-8we" firstAttribute="leading" secondItem="TTd-vj-jlF" secondAttribute="leading" constant="20" id="bGl-b8-o0U"/>
                             <constraint firstItem="6Ff-h7-0Sa" firstAttribute="leading" secondItem="TTd-vj-jlF" secondAttribute="leading" constant="20" id="h84-YQ-TJI"/>
+                            <constraint firstItem="TTd-vj-jlF" firstAttribute="trailing" secondItem="pPi-kN-8we" secondAttribute="trailing" constant="20" id="iCa-1m-sSD"/>
                             <constraint firstItem="6Ff-h7-0Sa" firstAttribute="top" secondItem="TTd-vj-jlF" secondAttribute="top" constant="139" id="uCq-L6-Qb6"/>
                             <constraint firstItem="TTd-vj-jlF" firstAttribute="trailing" secondItem="6Ff-h7-0Sa" secondAttribute="trailing" constant="20" id="yo9-4l-quT"/>
                         </constraints>
@@ -379,6 +391,7 @@
                     <navigationItem key="navigationItem" id="mf8-h8-BIR"/>
                     <connections>
                         <outlet property="calendarView" destination="6Ff-h7-0Sa" id="R08-1S-CMM"/>
+                        <outlet property="islamicDate" destination="pPi-kN-8we" id="B8x-ka-Ftn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hif-oF-TuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

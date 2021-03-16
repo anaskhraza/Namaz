@@ -12,6 +12,8 @@ import JTAppleCalendar
 class CalendarViewController: UIViewController {
 
     @IBOutlet var calendarView: JTAppleCalendarView!
+    @IBOutlet var islamicDate: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +42,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy MM dd"
 
-        let startDate = formatter.date(from: "2018 01 01")!
+        let startDate = formatter.date(from: "2021 01 01")!
         let endDate = Date()
         return ConfigurationParameters(startDate: startDate, endDate: endDate)
     }
@@ -69,5 +71,21 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
 
     func calendarSizeForMonths(_ calendar: JTAppleCalendarView?) -> MonthSize? {
         return MonthSize(defaultSize: 60)
+    }
+    
+    
+    func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+//        dateFormatter.locale=NSLocale(localeIdentifier: "en_US") as Locale
+        let georgianDate = date
+        
+        let islamic = NSCalendar(identifier: NSCalendar.Identifier.islamic)
+        let components = islamic!.components(NSCalendar.Unit(rawValue: UInt.max), from: georgianDate)
+        let dateString = String(format: "%02d-%02d-%04d", components.day!, components.month!, components.year!)
+        islamicDate.text = dateString
+        
+        
+        
     }
 }
