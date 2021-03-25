@@ -63,7 +63,9 @@
 		D8EDA36825061DEB0045C7AE /* Quran_and_NamazTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA36725061DEB0045C7AE /* Quran_and_NamazTests.swift */; };
 		D8EDA37325061DEB0045C7AE /* Quran_and_NamazUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDA37225061DEB0045C7AE /* Quran_and_NamazUITests.swift */; };
 		D8EEFDA92600B9500020A55A /* PrayerCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEFDA82600B9500020A55A /* PrayerCalculation.swift */; };
-		D8EEFDAF2600BE150020A55A /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8EEFDAE2600BE150020A55A /* configuration.plist */; };
+		D8EEFDAF2600BE150020A55A /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8EEFDAE2600BE150020A55A /* Config.plist */; };
+		D8EEFDB52600CEF70020A55A /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEFDB42600CEF70020A55A /* utils.swift */; };
+		D8EEFDBB2600D1520020A55A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEFDBA2600D1520020A55A /* Config.swift */; };
 		F915CE2DFEDEDE6FA92917B1 /* Pods_WidgetExtensionExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A1A1750F44D2B1F9FE8A8 /* Pods_WidgetExtensionExtension.framework */; };
 /* End PBXBuildFile section */
 
@@ -175,7 +177,9 @@
 		D8EDA37225061DEB0045C7AE /* Quran_and_NamazUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran_and_NamazUITests.swift; sourceTree = "<group>"; };
 		D8EDA37425061DEB0045C7AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8EEFDA82600B9500020A55A /* PrayerCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerCalculation.swift; sourceTree = "<group>"; };
-		D8EEFDAE2600BE150020A55A /* configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = configuration.plist; sourceTree = "<group>"; };
+		D8EEFDAE2600BE150020A55A /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		D8EEFDB42600CEF70020A55A /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		D8EEFDBA2600D1520020A55A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E15163DF6AC82E70AED2D765 /* Pods-Quran and NamazTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quran and NamazTests.release.xcconfig"; path = "Target Support Files/Pods-Quran and NamazTests/Pods-Quran and NamazTests.release.xcconfig"; sourceTree = "<group>"; };
 		E46A1A1750F44D2B1F9FE8A8 /* Pods_WidgetExtensionExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WidgetExtensionExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF25B8A13B0636C428C6C4A3 /* Pods-WidgetExtensionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetExtensionExtension.release.xcconfig"; path = "Target Support Files/Pods-WidgetExtensionExtension/Pods-WidgetExtensionExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 			children = (
 				D862E45B25B8A862008CDDC1 /* MonthMetadata.swift */,
 				D862E46525B8A883008CDDC1 /* Day.swift */,
+				D8EEFDBA2600D1520020A55A /* Config.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,7 +342,8 @@
 				D8EDA35925061DEB0045C7AE /* Assets.xcassets */,
 				D8EDA35B25061DEB0045C7AE /* LaunchScreen.storyboard */,
 				D8EDA35E25061DEB0045C7AE /* Info.plist */,
-				D8EEFDAE2600BE150020A55A /* configuration.plist */,
+				D8EEFDAE2600BE150020A55A /* Config.plist */,
+				D8EEFDB42600CEF70020A55A /* utils.swift */,
 			);
 			path = "Quran and Namaz";
 			sourceTree = "<group>";
@@ -545,7 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8EDA35D25061DEB0045C7AE /* LaunchScreen.storyboard in Resources */,
-				D8EEFDAF2600BE150020A55A /* configuration.plist in Resources */,
+				D8EEFDAF2600BE150020A55A /* Config.plist in Resources */,
 				D831DB1E251148C60026AF1A /* CountriesDictionary.plist in Resources */,
 				D8EDA35A25061DEB0045C7AE /* Assets.xcassets in Resources */,
 				D80FCBAF25A6FB0900512A84 /* citiesMap.json in Resources */,
@@ -713,6 +719,7 @@
 				D862E45C25B8A862008CDDC1 /* MonthMetadata.swift in Sources */,
 				D8EDA35525061DE80045C7AE /* SecondViewController.swift in Sources */,
 				D831DB052510A85B0026AF1A /* CalculationParameters.swift in Sources */,
+				D8EEFDBB2600D1520020A55A /* Config.swift in Sources */,
 				D80FCB8525A4DDDB00512A84 /* ToolbarControl.swift in Sources */,
 				D8EEFDA92600B9500020A55A /* PrayerCalculation.swift in Sources */,
 				D8EDA35325061DE80045C7AE /* FirstViewController.swift in Sources */,
@@ -723,6 +730,7 @@
 				D804F47C25AC2F770030C60B /* WidgetExtension.intentdefinition in Sources */,
 				D831DB1C2510AF500026AF1A /* Sunnah.swift in Sources */,
 				D831DB012510A77D0026AF1A /* MathUtilities.swift in Sources */,
+				D8EEFDB52600CEF70020A55A /* utils.swift in Sources */,
 				D862E46625B8A883008CDDC1 /* Day.swift in Sources */,
 				D831DB132510A8CD0026AF1A /* Minute.swift in Sources */,
 				D831DB0F2510A8AD0026AF1A /* PrayerAdjustment.swift in Sources */,

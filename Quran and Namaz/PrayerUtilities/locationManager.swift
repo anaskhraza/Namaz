@@ -22,9 +22,11 @@ protocol SetCoordinateProtocol {
 class LocationManager: NSObject, CLLocationManagerDelegate {
     
     var locManager: CLLocationManager!
-    
     var latitude: Double!
     var longitude: Double!
+    let prayerCalculation = PrayerCalculation()
+    let utils = Utils()
+    
     override init() {
         super.init()
         locManager = CLLocationManager()
@@ -41,11 +43,12 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
             locManager.startUpdatingLocation()
         }
     }
+    var setLocationCoordinateProtocol:SetCoordinateProtocol?
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        
+        let config = utils.parseConfig()
         if (status == CLAuthorizationStatus.denied) {
-            print("Denied")
+            self.prayerCalculation.determineLocation(latitude: Double(config.latitude), longitude: Double(config.longitude))
                 // The user denied authorization
         } else if (status == CLAuthorizationStatus.authorizedAlways) {
             self.getCoordinates()
@@ -55,7 +58,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
             // The user accepted authorization
         }
     }
-    var setLocationCoordinateProtocol:SetCoordinateProtocol?
+    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
