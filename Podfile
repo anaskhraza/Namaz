@@ -3,7 +3,7 @@ platform :ios, '9.0'
 
 target 'Quran and Namaz' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  use_frameworks! :linkage => :static
 
   # Pods for Quran and Namaz
   pod 'JTAppleCalendar', '~> 7.1'
