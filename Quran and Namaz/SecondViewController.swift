@@ -11,6 +11,7 @@ import UIKit
 class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFieldDelegate {
     
     var selectedRowValue: String?
+    let locationManager = LocationManager()
     
     func myPickerViewDidSelectRow(pickerView: UIPickerView, selectRowValue: String?, additionalParam: String?) {
         if(pickerView.tag == 1) {
@@ -26,6 +27,8 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
     @IBOutlet weak var textField3: UITextField!
     
     @IBOutlet var autoLocationSwitch: UISwitch!
+    @IBOutlet var shafiMadhab: UISwitch!
+    @IBOutlet var hanafiMadhab: UISwitch!
     
     
     @IBAction func pushForSearchCity(_ sender: Any) {
@@ -38,12 +41,16 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        autoLocationSwitch.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
-        autoLocationSwitch.isOn = false
-        
+        let config = self.locationManager.utils.parseConfig()
         var myEnglishArray: [NSDictionary] = []
         let calculationList: NSDictionary = getCalculationMethod()
+        
+        autoLocationSwitch.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
+        shafiMadhab.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
+        hanafiMadhab.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
+        autoLocationSwitch.isOn = false
+        
+       
         
         if let URL = Bundle.main.url(forResource: "CountriesDictionary", withExtension: "plist") {
             if let englishFromPlist = NSArray(contentsOf: URL) as? [NSDictionary] {
@@ -51,38 +58,37 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
             }
         }
         
-        
         let myPickerView: UIPickerView = UIPickerView(frame: CGRect(x: 0, y: 200, width: self.view.frame.width, height: 300))
         let myPickerView1: UIPickerView = UIPickerView(frame: CGRect(x: 0, y: 200, width: self.view.frame.width, height: 300))
+        
         let toolBarControl = ToolbarControl()
         let toolBarControl1 = ToolbarControl1()
         
         myPickerView.backgroundColor = .white
         myPickerView.tag = 1
-        
-        pickerOficinas = CustomPickerView(data: myEnglishArray)
-        
-        pickerOficinas1 = CustomPickerView(data: calculationList)
-        
         myPickerView.dataSource = pickerOficinas //note: myPickerView is the outlet of type UIPickerView in your ViewController
         myPickerView.delegate = pickerOficinas
         
+        myPickerView1.tag = 2
         myPickerView1.dataSource = pickerOficinas1 //note: myPickerView is the outlet of type UIPickerView in your ViewController
         myPickerView1.delegate = pickerOficinas1
+        
+        pickerOficinas = CustomPickerView(data: myEnglishArray)
+        pickerOficinas1 = CustomPickerView(data: calculationList)
         
         pickerOficinas.propertyThatReferencesThisViewController = self
         pickerOficinas1.propertyThatReferencesThisViewController = self
         
         textField1.inputView = myPickerView
         textField3.inputView = myPickerView1
-        myPickerView1.tag = 2
-        
         textField1.inputAccessoryView = toolBarControl.initiateToolBar()
         textField3.inputAccessoryView = toolBarControl1.initiateToolBar1()
+        
         
         textField2.isUserInteractionEnabled = false
  
     }
+
 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return false
@@ -105,7 +111,6 @@ class SecondViewController: UIViewController, CustomPickerViewProtocol, UITextFi
     @objc func switchChanged(mySwitch: UISwitch) {
         let value = mySwitch.isOn
         let _ = value
-        // Do something
     }
     
     

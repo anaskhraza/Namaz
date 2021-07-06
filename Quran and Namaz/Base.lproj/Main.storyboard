@@ -120,6 +120,8 @@
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="autoLocationSwitch" destination="OEI-0k-SdK" id="odS-Uk-KLj"/>
+                        <outlet property="hanafiMadhab" destination="27V-O1-bBj" id="1Kl-FR-JKM"/>
+                        <outlet property="shafiMadhab" destination="ORz-ke-qpO" id="sMm-5e-pXD"/>
                         <outlet property="textField1" destination="7mI-0O-EWP" id="cfl-It-qju"/>
                         <outlet property="textField2" destination="LCl-Id-lqf" id="TD7-Xl-XW4"/>
                         <outlet property="textField3" destination="NfF-zs-FzJ" id="URP-q5-Ix3"/>
