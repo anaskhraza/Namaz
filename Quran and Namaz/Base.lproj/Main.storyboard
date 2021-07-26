@@ -340,6 +340,19 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="161" height="186"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roW-Xa-clt">
+                                                            <rect key="frame" x="42" y="128" width="68" height="38"/>
+                                                            <color key="backgroundColor" red="0.99963015320000004" green="0.87700241800000001" blue="0.0026687539649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="Ywk-cx-lsl"/>
+                                                                <constraint firstAttribute="height" constant="20" id="aa7-LO-c2f"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29f-kc-qTs">
                                                             <rect key="frame" x="34" y="66" width="92" height="54"/>
                                                             <color key="backgroundColor" red="0.9996301531791687" green="0.87700241804122925" blue="0.0026687539648264647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -361,28 +374,15 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bng-Me-bVt">
                                                             <rect key="frame" x="60" y="138" width="32" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roW-Xa-clt">
-                                                            <rect key="frame" x="42" y="128" width="68" height="38"/>
-                                                            <color key="backgroundColor" red="0.99963015320000004" green="0.87700241800000001" blue="0.0026687539649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="20" id="Ywk-cx-lsl"/>
-                                                                <constraint firstAttribute="height" constant="20" id="aa7-LO-c2f"/>
-                                                            </constraints>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                    <integer key="value" value="10"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="e7u-V7-92E" firstAttribute="centerX" secondItem="2rb-Ky-IzK" secondAttribute="centerX" id="3at-5r-DOr"/>
-                                                        <constraint firstItem="bng-Me-bVt" firstAttribute="top" secondItem="29f-kc-qTs" secondAttribute="bottom" constant="5" id="90B-kq-DTv"/>
-                                                        <constraint firstItem="roW-Xa-clt" firstAttribute="top" secondItem="29f-kc-qTs" secondAttribute="bottom" constant="5" id="Axa-tP-7sj"/>
+                                                        <constraint firstItem="bng-Me-bVt" firstAttribute="top" secondItem="29f-kc-qTs" secondAttribute="bottom" constant="2.5" id="90B-kq-DTv"/>
+                                                        <constraint firstItem="roW-Xa-clt" firstAttribute="top" secondItem="29f-kc-qTs" secondAttribute="bottom" id="Axa-tP-7sj"/>
                                                         <constraint firstItem="bng-Me-bVt" firstAttribute="centerX" secondItem="2rb-Ky-IzK" secondAttribute="centerX" id="ccQ-b0-tn1"/>
                                                         <constraint firstItem="e7u-V7-92E" firstAttribute="centerY" secondItem="2rb-Ky-IzK" secondAttribute="centerY" id="rIq-Ti-Kw5"/>
                                                         <constraint firstItem="roW-Xa-clt" firstAttribute="centerX" secondItem="2rb-Ky-IzK" secondAttribute="centerX" id="tqW-1s-baM"/>
@@ -394,6 +394,8 @@
                                                 <size key="customSize" width="161" height="186"/>
                                                 <connections>
                                                     <outlet property="dateLabel" destination="e7u-V7-92E" id="g84-p9-TPa"/>
+                                                    <outlet property="dateSubLabel" destination="bng-Me-bVt" id="GEf-ja-3hw"/>
+                                                    <outlet property="selectedSubView" destination="roW-Xa-clt" id="Kga-1l-izA"/>
                                                     <outlet property="selectedView" destination="29f-kc-qTs" id="n9u-Wk-DaV"/>
                                                 </connections>
                                             </collectionViewCell>
